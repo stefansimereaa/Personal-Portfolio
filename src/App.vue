@@ -6,8 +6,8 @@ export default{
 </script>
 
 <template>
-    <!-- Component AppHomepage -->
-    <AppHomepage/>
+        <!-- Component AppHomepage -->
+        <AppHomepage/>
 </template>
 
 <style lang="scss">

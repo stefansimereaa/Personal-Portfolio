@@ -45,12 +45,25 @@
   </header>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@import '../assets/scss/_vars.scss';
+
+// Header Fonts
+header{
+  font-family: $Font ;
+}
+
 .navbar {
   height: 100px;
+  
 }
 
 .logo {
   max-width: 100px;
+}
+
+a{
+  font-family: $Font ;
+  font-weight: 600;
 }
 </style>
