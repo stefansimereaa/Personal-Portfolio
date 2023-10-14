@@ -8,29 +8,31 @@
   <!-- Header -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid align-items-center links">
+      <div class="container-fluid d-flex align-items-center links">
         <!-- Logo a sinistra -->
         <a href="#" class="navbar-brand d-flex align-items-center logo-container">
           <img src="../assets/img/CodingLogo.png" alt="Logo Portfolio" class="logo">
           <h3 class="ms-1">Stefan.dev</h3>
         </a>
 
-        <!-- Links a destra -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+        <div class="container-links">
+          <!-- Links a destra -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <!-- Navbar Toggle Button per schermi più piccoli -->
@@ -49,22 +51,19 @@
 // Header Fonts
 header{
   font-family: $Font ;
+  width: 100%;
 }
 .navbar {
   height: 100px;
   width: 100%;
 }
 
-.logo-container{
-  margin-left: 100px;
-}
-
-#navbarNav{
-  margin-left: 1200px;
-}
-
 .links{
   width: 100%;
+  margin-left: 100px;
+}
+.container-links{
+  margin-right: 100px;
 }
 
 // Logo Style
