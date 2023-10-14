@@ -12,13 +12,13 @@ import AppFooter from './AppFooter.vue';
 }
 </script>
 
-<template> 
- <!-- Component AppHeader -->
- <AppHeader/>
- <!-- Component AppMain -->
- <AppMain/>
- <!-- Component AppFooter -->
- <AppFooter/>
+<template>
+<!-- Component AppHeader -->
+<AppHeader/>
+<!-- Component AppMain -->
+<AppMain/>
+<!-- Component AppFooter -->
+<AppFooter/>
 </template>
 
 <style scoped lang="scss">

@@ -47,15 +47,17 @@
 
 <style scoped lang="scss">
 @import '../assets/scss/_vars.scss';
-
 // Header Fonts
 header{
   font-family: $Font ;
   width: 100%;
+  height: 100px;
+  background-color: white;
 }
 .navbar {
   height: 100px;
   width: 100%;
+  position: fixed;
 }
 
 .links{
