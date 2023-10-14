@@ -8,20 +8,12 @@
   <!-- Header -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container d-flex">
-
-        <div class="container">
-          <!-- Logo a sinistra -->
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <img src="../assets/img/CodingLogo.png" alt="Logo Portfolio" class="logo">
-            <h3 class="ms-1">Stefan.dev</h3>
-          </a>
-        </div>
-
-        <!-- Navbar Toggle Button per schermi più piccoli -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <div class="container-fluid align-items-center links">
+        <!-- Logo a sinistra -->
+        <a href="#" class="navbar-brand d-flex align-items-center logo-container">
+          <img src="../assets/img/CodingLogo.png" alt="Logo Portfolio" class="logo">
+          <h3 class="ms-1">Stefan.dev</h3>
+        </a>
 
         <!-- Links a destra -->
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,10 +32,16 @@
             </li>
           </ul>
         </div>
+
+        <!-- Navbar Toggle Button per schermi più piccoli -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
     </nav>
   </header>
 </template>
+
 
 <style scoped lang="scss">
 @import '../assets/scss/_vars.scss';
@@ -52,18 +50,43 @@
 header{
   font-family: $Font ;
 }
-
 .navbar {
   height: 100px;
-  
+  width: 100%;
 }
 
+.logo-container{
+  margin-left: 100px;
+}
+
+#navbarNav{
+  margin-left: 1200px;
+}
+
+.links{
+  width: 100%;
+}
+
+// Logo Style
 .logo {
-  max-width: 100px;
+  max-width: 80px;
 }
 
-a{
+h3{
   font-family: $Font ;
-  font-weight: 600;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+// Links Navbar style
+li a {
+  font-family: $Font;
+  font-weight: bold;
+  font-size: 17px;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #147efb; 
+  }
 }
 </style>
