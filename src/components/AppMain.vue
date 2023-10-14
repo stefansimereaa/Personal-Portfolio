@@ -4,9 +4,9 @@
 }
 </script>
 <template>
-  <Main>
+  <main>
     
-  </Main>
+  </main>
 </template>
 <style>
   
