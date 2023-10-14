@@ -8,9 +8,9 @@
       <section id="main-section">
         <div id="jumbotron" class="d-flex align-items-center justify-content-center">
           <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-6">
+            <div class="col-8">
               <div class="container-hand">
-                <h1>Jr Full-Stack Developer <img src="../assets/img/handlogo.png" alt="hand img"></h1>
+                <h1>Jr Full-Stack Web Developer <img src="../assets/img/handlogo.png" alt="hand img"></h1>
               </div>
               <p class="description-text">Hi, I'm Stefan Simerea. A passionate Jr Full-Stack Developer based in Pescara, Italy. 📍</p>
               <p class="d-flex align-items-center">
@@ -24,7 +24,7 @@
                 </a>
               </p>
             </div>
-            <div class="col">
+            <div class="col-4">
               <div class="col-photo"></div>
             </div>
           </div>
@@ -42,7 +42,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   border: 3px solid $Black-Shade;
-  margin-left: 40px;
+  margin-left: 30px;
   animation: morph 8s ease-in-out infinite;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   position: relative;
@@ -65,11 +65,11 @@
 
 #main-section{
   background-color: #f9f9f9;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .row{
-  width: 1000px;
+  width: 1200px;
 }
 .container-hand {
   position: relative;
