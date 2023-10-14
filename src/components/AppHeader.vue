@@ -52,11 +52,12 @@ header{
   font-family: $Font ;
   width: 100%;
   height: 100px;
-  background-color: white;
 }
 .navbar {
   height: 100px;
   width: 100%;
+  background-color: #fff;
+  z-index: 1;
   position: fixed;
 }
 

@@ -13,13 +13,10 @@
                 <h1>JR Full-Stack Developer</h1>
                 <img src="../assets/img/handlogo.png" alt="hand img">
               </div>
-              <p>Hi, I'm Stefan Topalovic. A passionate JR Full Stack Developer based in Pescara, Italy. <i class="fa-solid fa-location-dot"></i></p>
-              <font-awesome-icon :icon="['fas', 'location-dot']" />
+              <p>Hi, I'm Stefan Topalovic. A passionate JR Full Stack Developer based in Pescara, Italy. <font-awesome-icon :icon="['fas', 'location-dot']" /></p>
             </div>
             <div class="col">
-
-
-
+              
 
             </div>
           </div>
