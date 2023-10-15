@@ -5,9 +5,10 @@
 </script>
 <template>
   <main>
-      <section id="main-section">
+      <section id="jumbotron-section">
         <div id="jumbotron" class="d-flex align-items-center justify-content-center">
           <div class="row d-flex align-items-center justify-content-center">
+            <!-- Profile Description -->
             <div class="col-8">
               <div class="container-hand">
                 <h1>Jr Full-Stack Web Developer <img src="../assets/img/handlogo.png" alt="hand img"></h1>
@@ -24,8 +25,37 @@
                 </a>
               </p>
             </div>
+            <!-- Photo col -->
             <div class="col-4">
               <div class="col-photo"></div>
+            </div>
+            <!-- Technologies col -->
+            <div class="row mt-5">
+              <div class="container d-flex align-items-center p-0">
+                <p class="text-technologies">Tech Stack |</p>
+                <div class="technologies">
+                  <ul class="d-flex align-items-center">
+                    <!-- Html -->
+                    <li><img src="../assets/img/technologies/html.svg" alt="Html 5"></li>
+                    <!-- Css -->
+                    <li><img src="../assets/img/technologies/css-3.svg" alt="Css 3"></li>
+                    <!-- Bootstrap -->
+                    <li><img src="../assets/img/technologies/bootstrap-5-1.svg" alt="Bootstrap 5"></li>
+                    <!-- Javascript -->
+                    <li><img src="../assets/img/technologies/javascript.svg" alt="Javascript"></li>
+                    <!-- Vuejs -->
+                    <li><img src="../assets/img/technologies/vue-js.svg" alt="VueJs"></li>
+                    <!-- Sass -->
+                    <li><img src="../assets/img/technologies/sass.svg" alt="Sass"></li>
+                    <!-- Php -->
+                    <li><img src="../assets/img/technologies/php.svg" alt="Php"></li>
+                    <!-- MySql -->
+                    <li><img src="../assets/img/technologies/mysql.svg" alt="MySql"></li>
+                    <!-- Laravel -->
+                    <li><img src="../assets/img/technologies/laravel.svg" alt="Laravel"></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -34,6 +64,33 @@
 </template>
 <style scoped lang="scss">
 @import '../assets/scss/_vars.scss';
+
+.text-technologies{
+  font-weight: 600;
+  font-size: 20px;
+}
+// Technologies effects
+.technologies ul li img{
+  transition: all .3s ease-in-out;
+}
+.technologies ul li img:hover{
+  transform: translateY(-1rem);
+}
+
+// Da ordinare
+ul li img{
+  max-width: 38px;
+  margin-left: 15px;
+}
+
+ul{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  width: 500px;
+}
+
+
 .col-photo {
   background-image: url(../assets/img/Stefan.jpg);
   width: 20rem;
@@ -63,13 +120,14 @@
   }
 }
 
-#main-section{
+#jumbotron-section{
   background-color: #f9f9f9;
   padding-top: 80px;
 }
 
 .row{
   width: 1300px;
+  margin-bottom: 150px;
 }
 .container-hand {
   position: relative;
@@ -92,6 +150,7 @@ h1{
   line-height: 1.2;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  font-weight: bold;
 }
 
 a {
