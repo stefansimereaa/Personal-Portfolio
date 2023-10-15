@@ -59,6 +59,7 @@ header{
   background-color: #fff;
   z-index: 1;
   position: fixed;
+  box-shadow: 0 0 10px rgba(0,0,0,.09);
 }
 
 .links{

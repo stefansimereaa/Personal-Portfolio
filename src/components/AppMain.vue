@@ -12,7 +12,7 @@
               <div class="container-hand">
                 <h1>Jr Full-Stack Web Developer <img src="../assets/img/handlogo.png" alt="hand img"></h1>
               </div>
-              <p class="description-text">Hi, I'm Stefan Simerea. A passionate Jr Full-Stack Developer based in Pescara, Italy. 📍</p>
+              <p class="description-text">Hi, I'm Stefan Simerea. A passionate Jr Full-Stack Web Developer based in Pescara, Italy. 📍</p>
               <p class="d-flex align-items-center">
                 <!-- Linkedin logo -->
                 <a href="https://www.linkedin.com/in/stefan-simerea-929794291/" target="_blank">
@@ -42,7 +42,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   border: 3px solid $Black-Shade;
-  margin-left: 30px;
+  margin-left: 0px;
   animation: morph 8s ease-in-out infinite;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   position: relative;
@@ -69,7 +69,7 @@
 }
 
 .row{
-  width: 1200px;
+  width: 1300px;
 }
 .container-hand {
   position: relative;
