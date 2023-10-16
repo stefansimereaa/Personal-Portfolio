@@ -1,7 +1,7 @@
 <script>
   // Exported component
 export default {
-  name: 'AboutMe',
+  name: 'Aboutme',
 }
 </script>
 <template>

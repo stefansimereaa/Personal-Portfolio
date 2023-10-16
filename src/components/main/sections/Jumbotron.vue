@@ -60,37 +60,34 @@ export default {
             </div>
           </div>
         </div>
-    </section>
-</template>
+      </section>
+    </template>
 <style scoped lang="scss">
 @import '../../../assets/scss/vars';
 
-.text-technologies{
-  font-weight: 600;
-  font-size: 20px;
-}
-// Technologies effects
-.technologies ul li img{
-  transition: all .3s ease-in-out;
-}
-.technologies ul li img:hover{
-  transform: translateY(-1rem);
+// Jumbotron style
+#jumbotron-section{
+  background-color: #f9f9f9;
+  padding-top: 80px;
 }
 
-// Da ordinare
-ul li img{
-  max-width: 38px;
-  margin-left: 15px;
+.row{
+  width: 1300px;
+  margin-bottom: 150px;
+}
+// Hand style img
+.container-hand {
+  position: relative;
+
+  img {
+    width: 50px;
+    position: absolute;
+    top: 63%;
+    margin-left: 10px;
+  }
 }
 
-ul{
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  width: 500px;
-}
-
-
+// Photo profile style and effects
 .col-photo {
   background-image: url(../../../assets/img/Stefan.jpg);
   width: 20rem;
@@ -120,26 +117,6 @@ ul{
   }
 }
 
-#jumbotron-section{
-  background-color: #f9f9f9;
-  padding-top: 80px;
-}
-
-.row{
-  width: 1300px;
-  margin-bottom: 150px;
-}
-.container-hand {
-  position: relative;
-
-  img {
-    width: 50px;
-    position: absolute;
-    top: 63%;
-    margin-left: 10px;
-  }
-}
-
 .description-text{
   font-size: 20px;
 }
@@ -153,6 +130,12 @@ h1{
   font-weight: bold;
 }
 
+.text-technologies{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+// Hover effects tag a
 a {
   color: black;
   transition: color 0.3s;
@@ -160,5 +143,25 @@ a {
   &:hover {
     color: #147efb; 
   }
+}
+
+// Technologies effects
+.technologies ul li img{
+  transition: all .3s ease-in-out;
+}
+.technologies ul li img:hover{
+  transform: translateY(-1rem);
+}
+
+ul li img{
+  max-width: 38px;
+  margin-left: 15px;
+}
+
+ul{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  width: 500px;
 }
 </style>
