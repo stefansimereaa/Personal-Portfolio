@@ -6,10 +6,10 @@
 <template>
   <footer>
     <div class="container py-5">
-      <div class="d-flex align-items-center">
+      <div class="row d-flex align-items-center justify-content-between">
         <!-- Logos Copyrights -->
         <div class="col">
-          <h4>Copyright © 2023. All rights are reserved</h4>
+          <h5 class="text-copyright">Copyright © 2023. All rights are reserved</h5>
         </div>
         <!-- Logos Footer -->
         <div class="col-2 d-flex align-items-center">
@@ -28,6 +28,8 @@
 </template>
 <style scoped lang="scss">
 @import '../assets/scss/_vars.scss';
+
+
 footer{
   background-color: #2D2E32;
   color: white;
@@ -36,9 +38,12 @@ footer{
 .col-2 a {
   color: white;
   transition: color 0.3s;
-
+  
   &:hover {
     color: #147efb; 
+  }
+  .text-copyright{
+    margin: 0px;
   }
 }
 </style>
