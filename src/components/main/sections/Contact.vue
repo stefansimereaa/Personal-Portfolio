@@ -36,7 +36,7 @@ export default {
             <!-- Info Email -->
             <div class="contact-info ms-3">
               <h3>Mail</h3>
-              <a class="color-hover" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=stefanosimerea15@gmail.com">stefanosimerea15@gmail.com</a>
+              <a class="color-hover" target="_blank" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=stefanosimerea15@gmail.com">stefanosimerea15@gmail.com</a>
             </div>
           </div>
         </div>
