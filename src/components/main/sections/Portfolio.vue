@@ -31,7 +31,7 @@ export default {
         <div class="card card-normal mb-5">
           <!-- Link project -->
           <div class="col-6">
-            <a href="../../../projects/discord/index.html" target="_blank">
+            <a href="" target="_blank">
               <img src="../../../assets/img/projects/discord.png" alt="website">
             </a>
           </div>
