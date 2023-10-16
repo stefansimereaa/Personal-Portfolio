@@ -45,6 +45,8 @@ export default {
 </template>
 <style lang="scss" scoped>
 @import '../../../assets/scss/vars';
+
+// Section contact style
 #contact{
   padding: 7rem 0;
 }
@@ -93,6 +95,4 @@ span{
   text-decoration: none;
   color: #2d2e32;
 }
-
-
 </style>

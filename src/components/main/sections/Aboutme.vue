@@ -8,5 +8,6 @@ export default {
   
 </template>
 <style lang="scss" scoped>
+@import '../../../assets/scss/vars';
   
 </style>
