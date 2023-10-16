@@ -27,8 +27,7 @@
   </footer>
 </template>
 <style scoped lang="scss">
-@import '../assets/scss/_vars.scss';
-
+@import '../../assets/scss/_vars.scss';
 
 footer{
   background-color: #2D2E32;

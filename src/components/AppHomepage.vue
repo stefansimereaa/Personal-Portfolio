@@ -1,9 +1,9 @@
 <script>
 
 // Imported components
-import AppHeader from './AppHeader.vue';
-import AppMain from './AppMain.vue';
-import AppFooter from './AppFooter.vue';
+import AppHeader from './header/AppHeader.vue';
+import AppMain from './main/AppMain.vue';
+import AppFooter from './footer/AppFooter.vue';
 
 // Exported component
   export default {

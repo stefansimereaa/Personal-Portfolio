@@ -1,17 +1,18 @@
 <script>
-   export default {
-  name: 'AppMain',
+// Exported component
+export default {
+  name: 'Jumbotron',
 }
 </script>
 <template>
-  <main>
-      <section id="jumbotron-section">
+    <!-- Section Jumbotron -->
+    <section id="jumbotron-section">
         <div id="jumbotron" class="d-flex align-items-center justify-content-center">
           <div class="row d-flex align-items-center justify-content-center">
             <!-- Profile Description -->
             <div class="col-8">
               <div class="container-hand">
-                <h1>Jr Full-Stack Web Developer <img src="../assets/img/handlogo.png" alt="hand img"></h1>
+                <h1>Jr Full-Stack Web Developer <img src="../../../assets/img/handlogo.png" alt="hand img"></h1>
               </div>
               <p class="description-text">Hi, I'm Stefan Simerea. A passionate Jr Full-Stack Web Developer based in Pescara, Italy. 📍</p>
               <p class="d-flex align-items-center">
@@ -36,35 +37,33 @@
                 <div class="technologies">
                   <ul class="d-flex align-items-center">
                     <!-- Html -->
-                    <li><img src="../assets/img/technologies/html.svg" alt="Html 5"></li>
+                    <li><img src="../../../assets/img/technologies/html.svg" alt="Html 5"></li>
                     <!-- Css -->
-                    <li><img src="../assets/img/technologies/css-3.svg" alt="Css 3"></li>
+                    <li><img src="../../../assets/img/technologies/css-3.svg" alt="Css 3"></li>
                     <!-- Bootstrap -->
-                    <li><img src="../assets/img/technologies/bootstrap-5-1.svg" alt="Bootstrap 5"></li>
+                    <li><img src="../../../assets/img/technologies/bootstrap-5-1.svg" alt="Bootstrap 5"></li>
                     <!-- Javascript -->
-                    <li><img src="../assets/img/technologies/javascript.svg" alt="Javascript"></li>
+                    <li><img src="../../../assets/img/technologies/javascript.svg" alt="Javascript"></li>
                     <!-- Vuejs -->
-                    <li><img src="../assets/img/technologies/vue-js.svg" alt="VueJs"></li>
+                    <li><img src="../../../assets/img/technologies/vue-js.svg" alt="VueJs"></li>
                     <!-- Sass -->
-                    <li><img src="../assets/img/technologies/sass.svg" alt="Sass"></li>
+                    <li><img src="../../../assets/img/technologies/sass.svg" alt="Sass"></li>
                     <!-- Php -->
-                    <li><img src="../assets/img/technologies/php.svg" alt="Php"></li>
+                    <li><img src="../../../assets/img/technologies/php.svg" alt="Php"></li>
                     <!-- MySql -->
-                    <li><img src="../assets/img/technologies/mysql.svg" alt="MySql"></li>
+                    <li><img src="../../../assets/img/technologies/mysql.svg" alt="MySql"></li>
                     <!-- Laravel -->
-                    <li><img src="../assets/img/technologies/laravel.svg" alt="Laravel"></li>
+                    <li><img src="../../../assets/img/technologies/laravel.svg" alt="Laravel"></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      
-  </main>
+    </section>
 </template>
 <style scoped lang="scss">
-@import '../assets/scss/_vars.scss';
+@import '../../../assets/scss/vars';
 
 .text-technologies{
   font-weight: 600;
@@ -93,7 +92,7 @@ ul{
 
 
 .col-photo {
-  background-image: url(../assets/img/Stefan.jpg);
+  background-image: url(../../../assets/img/Stefan.jpg);
   width: 20rem;
   height: 20rem;
   background-size: cover;

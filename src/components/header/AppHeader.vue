@@ -11,7 +11,7 @@
       <div class="container-fluid d-flex align-items-center links">
         <!-- Logo a sinistra -->
         <a href="#" class="navbar-brand d-flex align-items-center logo-container">
-          <img src="../assets/img/CodingLogo.png" alt="Logo Portfolio" class="logo">
+          <img src="../../assets/img/CodingLogo.png" alt="Logo Portfolio" class="logo">
           <h3 class="ms-1">Stefan.dev</h3>
         </a>
 
@@ -46,7 +46,7 @@
 
 
 <style scoped lang="scss">
-@import '../assets/scss/_vars.scss';
+@import '../../assets/scss/_vars.scss';
 // Header Fonts
 header{
   font-family: $Font ;
