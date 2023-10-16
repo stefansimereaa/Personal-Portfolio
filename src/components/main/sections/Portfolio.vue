@@ -172,7 +172,7 @@ export default {
 #showMoreButton{
   position: absolute;
   left: 43%;
-  background-color: black;
+  background-color: #2d2e32;
   width: 200px;
   display: flex;
   align-items: center;
