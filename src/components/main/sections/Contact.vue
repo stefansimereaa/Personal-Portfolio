@@ -54,7 +54,7 @@ export default {
 // contact title style
 .contact-title{
   color: #147efb;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 1rem;
   text-transform: uppercase;
