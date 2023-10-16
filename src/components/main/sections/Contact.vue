@@ -24,7 +24,7 @@ export default {
             <!-- Info Location -->
             <div class="contact-info ms-3">
               <h3>Location</h3>
-              <p>Pescara, Italy</p>
+              <a href="https://maps.app.goo.gl/Ve3CVBgDRHdb5mYAA" target="_blank" class="color-hover">Pescara, Italy</a>
             </div>
           </div>
           <!-- Email INFO -->
@@ -36,7 +36,7 @@ export default {
             <!-- Info Email -->
             <div class="contact-info ms-3">
               <h3>Mail</h3>
-              <a href="mailto:stefansimerea15@gmail.com">stefansimerea15@gmail.com</a>
+              <a class="color-hover" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=stefanosimerea15@gmail.com">stefanosimerea15@gmail.com</a>
             </div>
           </div>
         </div>
@@ -82,9 +82,6 @@ span{
 .contact-icons h3{
   font-size: 1.2rem;
 }
-.contact-info p{
-  color: #767676;
-}
 
 .contact-info, p, h3{
   margin: 0px 0px;
@@ -93,6 +90,11 @@ span{
 
 .contact-info a{
   text-decoration: none;
-  color: #2d2e32;
+  color: #767676;
+}
+
+.color-hover:hover{
+  color: #147efb;
+  cursor: pointer;
 }
 </style>
