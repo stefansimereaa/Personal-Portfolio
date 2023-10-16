@@ -7,7 +7,7 @@ export default {
 <template>
   <section id="aboutme">
     <div class="container">
-      <div class="row">
+      <div class="row d-flex align-items-center justify-content-center">
         <!-- Photo col -->
         <div class="col">
           <div class="container-photos">
@@ -23,9 +23,10 @@ export default {
         </div>
         <!-- Description col -->
         <div class="col">
+          <!-- Container Description -->
           <div class="container-description">
             <h3>About Me</h3>
-            <h4>A dedicated Front-end Developer based in Belgrade, Serbia 📍</h4>
+            <h4>A dedicated Jr. Full Stack Web Developer based in Pescara, Italy 📍</h4>
             <p>I am ready to take on new challenges and eager for the constantly evolving dynamics of my world. My journey begins at ITS, a five-year school training program with a strong emphasis on computer science, where I delved into various programming languages. In the fifth year, I created a website dedicated to cybersecurity using WordPress. My passion for programming drove me to seek self-education in my free time. This ongoing quest for knowledge has led me to my current training at Boolean, where I have developed both front-end and back-end knowledge, and I am working hard to become a Jr. Full Stack Developer. I am determined to stay up-to-date and actively contribute to the growth of the programming field.</p>
           </div>
         </div>
@@ -38,10 +39,6 @@ export default {
 
 #aboutme{
   padding: 7rem 0;
-}
-
-.col{
-  border: 2px solid green;
 }
 
 .container-photos{
@@ -83,11 +80,22 @@ export default {
 // Description col style
 .container-description h3{
   color: #147efb;
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
+.container-description h4{
+  color: #2d2e32;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.container-description p{
+  color: #767676;
+}
 
 </style>
