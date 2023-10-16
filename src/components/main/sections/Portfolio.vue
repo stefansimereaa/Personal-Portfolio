@@ -106,11 +106,6 @@ export default {
         <!-- Project 4 -->
         <div class="card card-normal mb-5 d-none">
           <!-- Link project -->
-          <div class="col-6">
-            <a href="">
-              <img src="../../../assets/img/projects/discord.png" alt="website">
-            </a>
-          </div>
           <div class="col-5 d-flex flex-column justify-content-center align-items-center">
             <div class="container d-flex flex-column justify-content-center align-items-center">
               <h3>Discord <span class="date-time">(April 2023)</span></h3>
@@ -126,6 +121,11 @@ export default {
               <a href="#">Live Demo 
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-external-link" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;"><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path><path d="M11 13l9 -9"></path><path d="M15 4h5v5"></path></svg></a>
             </div>
+          </div>
+          <div class="col-6">
+            <a href="">
+              <img src="../../../assets/img/projects/discord.png" alt="website">
+            </a>
           </div>
         </div>
 
@@ -154,17 +154,36 @@ export default {
             </div>
           </div>
         </div>
-
         
-
-        <!-- Aggiungi il pulsante "Mostra di più" -->
-        <button id="showMoreButton" class="btn btn-primary">Mostra di più</button>
+        <!-- Show more btn -->
+        <div class="container container-btn">
+          <button id="showMoreButton" class="btn btn-primary py-3 px-5 rounded-pill">Show More</button>
+        </div>
       </div>
     </div>
   </section>
 </template>
 <style lang="scss" scoped>
 @import '../../../assets/scss/vars';
+.container-btn{
+  position: relative;
+}
+
+#showMoreButton{
+  position: absolute;
+  left: 40%;
+  background-color: black;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton:hover{
+  background-color: #147efb;
+}
+
 
 // Da ordinare
 .col-5 .description-project{
