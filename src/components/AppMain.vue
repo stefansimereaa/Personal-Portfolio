@@ -29,7 +29,7 @@
             <div class="col-4">
               <div class="col-photo"></div>
             </div>
-            <!-- Technologies col -->
+            <!-- Technologies row -->
             <div class="row mt-5">
               <div class="container d-flex align-items-center p-0">
                 <p class="text-technologies">Tech Stack |</p>
@@ -60,6 +60,7 @@
           </div>
         </div>
       </section>
+      
   </main>
 </template>
 <style scoped lang="scss">
