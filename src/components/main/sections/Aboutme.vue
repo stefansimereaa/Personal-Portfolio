@@ -47,7 +47,7 @@ export default {
 
 // First img style
  #first-img{
-  width: 500px;
+  width: 540px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0,0,0, .1);
 }
@@ -55,8 +55,8 @@ export default {
 #second-img{
   max-width: 60px;
   position: absolute;
-  left: 68%;
-  bottom: 5%;
+  left: 73%;
+  bottom: 3%;
   z-index: 1;
 }
 
@@ -64,7 +64,7 @@ export default {
 #third-img {
   max-width: 160px;
   position: absolute;
-  left: 60%;
+  left: 65%;
   bottom: -10%;
   border-radius: 50%;
   animation: rotate 9s linear infinite;
