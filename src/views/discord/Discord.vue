@@ -151,6 +151,7 @@
                     <li>Nitro</li>
                     <li>Sicurezza</li>
                     <li>Assistenza</li>
+                    <li>Assistenza</li>
                 </ul>
             </div>
             <div class="footer-small-content">
@@ -435,7 +436,7 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 50px 20px;
+    padding: 80px 20px;
 }
 .footer-med-content{
     height: 350px;
