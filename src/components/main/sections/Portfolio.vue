@@ -159,6 +159,8 @@ export default {
         <div class="container container-btn">
           <button id="showMoreButton" class="btn btn-primary py-3 px-5 rounded-pill">Show More</button>
         </div>
+        <!-- Collegamento a Discord utilizzando RouterLink -->
+        <a href="/discord" target="_blank">discord</a>
       </div>
     </div>
   </section>

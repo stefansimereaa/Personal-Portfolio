@@ -6,9 +6,16 @@ export default{
 </script>
 
 <template>
-        <!-- Component AppHomepage -->
-        <AppHomepage/>
-</template>
+    <!-- Routes for projects -->
+    <div>
+      <!-- Component AppHomepage -->
+      <div class="div" v-if="!$route.path.includes('/discord')">
+        <AppHomepage></AppHomepage>
+      </div>
+      <router-view v-if="$route.path.includes('/discord')"></router-view>
+    </div>
+  </template>
+  
 
 <style lang="scss">
 @import "./assets/scss/_style.scss";

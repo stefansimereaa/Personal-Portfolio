@@ -23,6 +23,6 @@ import Contact from './sections/Contact.vue';
       <Contact />
   </main>
 </template>
-<style scoped lang="scss"> 
+<style lang="scss" scoped> 
 
 </style>
