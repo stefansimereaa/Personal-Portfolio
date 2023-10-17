@@ -27,7 +27,7 @@ export default {
           <div class="container-description">
             <h3>About Me</h3>
             <h4>A dedicated Jr. Full Stack Web Developer based in Pescara, Italy 📍</h4>
-            <p>I am ready to take on new challenges and eager for the constantly evolving dynamics of my world. My journey begins at ITS, a five-year school training program with a strong emphasis on computer science, where I delved into various programming languages. In the fifth year, I created a website dedicated to cybersecurity using WordPress. My passion for programming drove me to seek self-education in my free time. This ongoing quest for knowledge has led me to my current training at Boolean, where I have developed both front-end and back-end knowledge, and I am working hard to become a Jr. Full Stack Developer. I am determined to stay up-to-date and actively contribute to the growth of the programming field.</p>
+            <p class="text-justify">I am ready to take on new challenges and eager for the constantly evolving dynamics of my world. My journey begins at ITS, a five-year school training program with a strong emphasis on computer science, where I delved into various programming languages. In the fifth year, I created a website dedicated to cybersecurity using WordPress. My passion for programming drove me to seek self-education in my free time. This ongoing quest for knowledge has led me to my current training at Boolean, where I have developed both front-end and back-end knowledge, and I am working hard to become a Jr. Full Stack Developer. I am determined to stay up-to-date and actively contribute to the growth of the programming field.</p>
           </div>
         </div>
       </div>
