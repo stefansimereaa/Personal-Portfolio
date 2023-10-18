@@ -7,7 +7,6 @@ export default {
         ? {
             backgroundColor: '#181a1e',
             color: '#fff',
-            boxShadow: '0 0 10px rgba(255,255,255,.5)',
           }
         : {
             backgroundColor: '#fff',

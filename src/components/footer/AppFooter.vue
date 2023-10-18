@@ -1,10 +1,22 @@
 <script>
   export default {
   name: 'AppFooter',
+  computed: {
+    navbarStyle() {
+      return this.$store.state.isDarkMode
+        ? {
+            backgroundColor: '#181a1e',
+            color: '#fff',
+          }
+        : {
+            backgroundColor: '#fff',
+          };
+    },
+  },
 }
 </script>
 <template>
-  <footer>
+  <footer :style="[$store.state.isDarkMode ? navbarStyle : { 'background-color': '#2D2E32' }, $store.state.isDarkMode ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]">
     <div class="container py-5">
       <div class="row d-flex align-items-center justify-content-between">
         <!-- Logos Copyrights -->

@@ -8,7 +8,7 @@ export default {
             backgroundColor: '#181a1e',
             color: 'white',
           }
-        : {
+          :{
             backgroundColor: '#fff',
           };
     },

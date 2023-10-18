@@ -2,16 +2,28 @@
   // Exported component
 export default {
   name: 'Contact',
+  computed: {
+    navbarStyle() {
+      return this.$store.state.isDarkMode
+        ? {
+            backgroundColor: '#181a1e',
+            color: '#fff',
+          }
+        : {
+            backgroundColor: '#fff',
+          };
+    },
+  },
 }
 </script>
 <template>
   <!-- Section Contact -->
-  <section id="contact">
+  <section id="contact" :style="navbarStyle">
     <div class="container">
         <!-- Contact Title -->
         <div class="contact-title">
-          <p>CONTACT</p>
-          <h3 class="text-black">Don't be shy! Hit me up! 👇</h3>
+          <p :style="{ color: '#147efb' }">CONTACT</p>
+          <h3 :style="{ color: isDarkText ? '#fff' : 'inherit' }">Don't be shy! Hit me up! 👇</h3>
         </div>
         <!-- Contact Icons -->
         <div class="contact-icons d-flex">
@@ -24,7 +36,7 @@ export default {
             <!-- Info Location -->
             <div class="contact-info ms-3">
               <h3>Location</h3>
-              <a href="https://maps.app.goo.gl/Ve3CVBgDRHdb5mYAA" target="_blank" class="color-hover">Pescara, Italy</a>
+              <a href="https://maps.app.goo.gl/Ve3CVBgDRHdb5mYAA" target="_blank" class="color-hover" >Pescara, Italy</a>
             </div>
           </div>
           <!-- Email INFO -->
@@ -53,7 +65,6 @@ export default {
 
 // contact title style
 .contact-title{
-  color: #147efb;
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 1rem;

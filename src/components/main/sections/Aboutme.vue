@@ -2,10 +2,22 @@
   // Exported component
 export default {
   name: 'Aboutme',
+  computed: {
+    navbarStyle() {
+      return this.$store.state.isDarkMode
+        ? {
+            backgroundColor: '#181a1e',
+            color: '#fff',
+          }
+        : {
+            backgroundColor: '#fff',
+          };
+    },
+  },
 }
 </script>
 <template>
-  <section id="aboutme">
+  <section id="aboutme" :style="navbarStyle">
     <div class="container">
       <div class="row d-flex align-items-center justify-content-center">
         <!-- Photo col -->
@@ -26,8 +38,8 @@ export default {
           <!-- Container Description -->
           <div class="container-description">
             <h3>About Me</h3>
-            <h4>A dedicated Jr. Full Stack Web Developer based in Pescara, Italy 📍</h4>
-            <p class="text-justify">I am ready to take on new challenges and eager for the constantly evolving dynamics of my world. My journey begins at ITS, a five-year school training program with a strong emphasis on computer science, where I delved into various programming languages. In the fifth year, I created a website dedicated to cybersecurity using WordPress. My passion for programming drove me to seek self-education in my free time. This ongoing quest for knowledge has led me to my current training at Boolean, where I have developed both front-end and back-end knowledge, and I am working hard to become a Jr. Full Stack Developer. I am determined to stay up-to-date and actively contribute to the growth of the programming field.</p>
+            <h4 :style="{ color: isDarkText ? '#fff' : 'inherit' }">A dedicated Jr. Full Stack Web Developer based in Pescara, Italy 📍</h4>
+            <p class="text-justify" :style="{ color: isDarkText ? '#fff' : 'inherit' }">I am ready to take on new challenges and eager for the constantly evolving dynamics of my world. My journey begins at ITS, a five-year school training program with a strong emphasis on computer science, where I delved into various programming languages. In the fifth year, I created a website dedicated to cybersecurity using WordPress. My passion for programming drove me to seek self-education in my free time. This ongoing quest for knowledge has led me to my current training at Boolean, where I have developed both front-end and back-end knowledge, and I am working hard to become a Jr. Full Stack Developer. I am determined to stay up-to-date and actively contribute to the growth of the programming field.</p>
           </div>
         </div>
       </div>
