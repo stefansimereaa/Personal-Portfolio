@@ -77,16 +77,14 @@ export default {
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
               <li class="dark-mode d-flex my-1 ms-2" :class="darkModeActive">
-                <span class="material-icons-sharp " :class="{ active: !isDarkMode }" @click="toggleLightMode"> light_mode </span>
+                <span class="material-icons-sharp" :class="{ active: !isDarkMode }" @click="toggleLightMode"> light_mode </span>
                 <span class="material-icons-sharp " :class="{ active: isDarkMode }" @click="toggleDarkMode"> dark_mode </span>
               </li>
-              <li class="dark-mode d-flex my-1 ms-2" :class="languageActive">
-                <span class="material-icons-sharp" :class="{ active: !languageActive }" @click="toggleItalian">
-                  <span class="flag-icon flag-icon-it"></span>
-                </span>
-                <span class="material-icons-sharp " :class="{ active: languageActive }" @click="toggleEnglish"> 
-                  <span class="flag-icon flag-icon-gb"></span>
-                </span>
+              <li class="dark-mode my-1 ms-3" :class="languageActive">
+                <!-- Italian Flag -->
+                <span class="flag-icon flag-icon-it" style="width: 10px; padding: 12px;" :class="{ active: !languageActive }" @click="togglelanguageActive"></span>
+                <!-- English Flag --> 
+                <span class="flag-icon flag-icon-gb" style="width: 10px; padding: 12px;" :class="{ active: languageActive }" @click="togglelanguageActive"></span>
               </li>
             </ul>
           </div>
@@ -106,7 +104,6 @@ export default {
 @import '../../assets/scss/_vars.scss';
 // Regole CSS per testo bianco in modalità "dark"
 
-
 .dark-mode{
   background-color: rgba(132, 139, 200, 0.18);
   display: flex;
@@ -119,10 +116,12 @@ export default {
 }
 
 .dark-mode span.active {
-    background-color: #6C9BCF;
-    color: white;
-    border-radius: 0.4rem;
+  background-color: #6C9BCF;
+  color: white;
+  border: 3px solid #6C9BCF;
+  border-radius: 0.5rem;
 }
+
 
 .dark-mode span{
   font-size: 1.2rem;
@@ -132,16 +131,6 @@ export default {
   align-items: center;
   justify-content: center;
 }
-
-
-.dark-mode-variables {
-    --color-background: #181a1e,
-    --color-white: #202528,
-    --color-dark: #edeffd,
-    --color-dark-variant: #a3bdcc,
-    --color-light: rgba(0, 0, 0, 0.4),
-    --box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18)
-};
 
 
 // Header Fonts
