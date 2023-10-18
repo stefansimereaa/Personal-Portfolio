@@ -84,7 +84,9 @@ export default {
                 <span class="material-icons-sharp" :class="{ active: !languageActive }" @click="toggleItalian">
                   <span class="flag-icon flag-icon-it"></span>
                 </span>
-                <span class="material-icons-sharp " :class="{ active: languageActive }" @click="toggleEnglish"> </span>
+                <span class="material-icons-sharp " :class="{ active: languageActive }" @click="toggleEnglish"> 
+                  <span class="flag-icon flag-icon-gb"></span>
+                </span>
               </li>
             </ul>
           </div>
