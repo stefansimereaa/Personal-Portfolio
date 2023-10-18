@@ -1,6 +1,11 @@
 <script>
 export default {
   name: 'AppHeader',
+  data() {
+    return {
+      isDarkMode: false,
+    };
+  },
   computed: {
     navbarStyle() {
       return this.$store.state.isDarkMode

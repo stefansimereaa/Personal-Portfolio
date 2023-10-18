@@ -2,6 +2,10 @@
 export default {
   // Exported Component
   name: 'Portfolio',
+  props: {
+  isDarkMode: Boolean,
+  isDarkText: Boolean,
+  },
   computed: {
     navbarStyle() {
       return this.$store.state.isDarkMode

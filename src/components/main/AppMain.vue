@@ -9,18 +9,22 @@ import Contact from './sections/Contact.vue';
   export default {
   name: 'AppMain',
   components: { Jumbotron, Aboutme, Portfolio, Contact },
+  props: {
+  isDarkMode: Boolean,
+  isDarkText: Boolean,
+  },
 }
 </script>
 <template>
   <main>
       <!-- Section Jumbotron -->
-      <Jumbotron />
+      <Jumbotron :isDarkMode="isDarkMode" :isDarkText="isDarkText"/> 
       <!-- Section About Me -->
-      <Aboutme />
+      <Aboutme :isDarkMode="isDarkMode" :isDarkText="isDarkText" />
       <!-- Section Portfolio -->
-      <Portfolio />
+      <Portfolio :isDarkMode="isDarkMode" :isDarkText="isDarkText"/>
       <!-- Section Contact -->
-      <Contact />
+      <Contact :isDarkMode="isDarkMode" :isDarkText="isDarkText"/>
   </main>
 </template>
 <style lang="scss" scoped> 

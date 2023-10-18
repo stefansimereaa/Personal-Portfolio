@@ -9,6 +9,10 @@ import AppFooter from './footer/AppFooter.vue';
   export default {
   name: 'AppHomepage',
   components: { AppHeader, AppMain, AppFooter },
+  props: {
+  isDarkMode: Boolean,
+  isDarkText: Boolean,
+  },
 }
 </script>
 
@@ -16,9 +20,9 @@ import AppFooter from './footer/AppFooter.vue';
 <!-- Component AppHeader -->
 <AppHeader />
 <!-- Component AppMain -->
-<AppMain />
+<AppMain :isDarkMode="isDarkMode" :isDarkText="isDarkText"  />
 <!-- Component AppFooter -->
-<AppFooter/>
+<AppFooter :isDarkMode="isDarkMode" :isDarkText="isDarkText"/>
 </template>
 
 <style lang="scss" scoped>

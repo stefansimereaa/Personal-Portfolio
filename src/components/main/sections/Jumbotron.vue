@@ -1,6 +1,10 @@
 <script>
 export default {
   name: 'Jumbotron',
+  props: {
+  isDarkMode: Boolean,
+  isDarkText: Boolean,
+  },
   computed: {
     navbarStyle() {
       return this.$store.state.isDarkMode

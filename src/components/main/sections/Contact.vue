@@ -2,6 +2,10 @@
   // Exported component
 export default {
   name: 'Contact',
+  props: {
+  isDarkMode: Boolean,
+  isDarkText: Boolean,
+  },
   computed: {
     navbarStyle() {
       return this.$store.state.isDarkMode

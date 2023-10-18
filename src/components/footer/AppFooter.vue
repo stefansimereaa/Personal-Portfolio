@@ -1,6 +1,10 @@
 <script>
   export default {
   name: 'AppFooter',
+  props: {
+  isDarkMode: Boolean,
+  isDarkText: Boolean,
+  },
   computed: {
     navbarStyle() {
       return this.$store.state.isDarkMode
