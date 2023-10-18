@@ -48,6 +48,7 @@ export default {
 <template>
   <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icon.css">
   </head>
   <!-- Header -->
   <header>
@@ -79,6 +80,12 @@ export default {
                 <span class="material-icons-sharp " :class="{ active: !isDarkMode }" @click="toggleLightMode"> light_mode </span>
                 <span class="material-icons-sharp " :class="{ active: isDarkMode }" @click="toggleDarkMode"> dark_mode </span>
               </li>
+              <li class="dark-mode d-flex my-1 ms-2" :class="languageActive">
+                <span class="material-icons-sharp" :class="{ active: !languageActive }" @click="toggleItalian">
+                  <span class="flag-icon flag-icon-it"></span>
+                </span>
+                <span class="material-icons-sharp " :class="{ active: languageActive }" @click="toggleEnglish"> </span>
+              </li>
             </ul>
           </div>
         </div>
@@ -100,13 +107,13 @@ export default {
 
 .dark-mode{
   background-color: rgba(132, 139, 200, 0.18);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 1.6rem;
-    width: 4.2rem;
-    cursor: pointer;
-    border-radius: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.6rem;
+  width: 4.2rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
 }
 
 .dark-mode span.active {
