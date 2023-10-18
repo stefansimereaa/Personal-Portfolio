@@ -31,7 +31,7 @@ export default {
 </script>
 
 <template>
-  <section id="portfolio" :style="navbarStyle">
+  <section id="portfolio" :style="[$store.state.isDarkMode ? navbarStyle : { 'background-color': '#f9f9f9' }, $store.state.isDarkMode ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]">
     <div class="container">
       <div class="portfolio-title">
         <p>Portfolio</p>

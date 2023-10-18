@@ -18,7 +18,7 @@ export default {
 
 <template>
     <!-- Section Jumbotron -->
-    <section id="jumbotron-section" :style="navbarStyle">
+    <section id="jumbotron-section" :style="[$store.state.isDarkMode ? navbarStyle : { 'background-color': '#f9f9f9' }, $store.state.isDarkMode ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]">
         <div id="jumbotron" class="d-flex align-items-center justify-content-center">
           <div class="row d-flex align-items-center justify-content-center">
             <!-- Profile Description -->
