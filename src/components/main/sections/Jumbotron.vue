@@ -1,23 +1,36 @@
 <script>
-// Exported component
 export default {
   name: 'Jumbotron',
+  computed: {
+    navbarStyle() {
+      return this.$store.state.isDarkMode
+        ? {
+            backgroundColor: '#181a1e',
+            color: '#fff',
+            boxShadow: '0 0 10px rgba(255,255,255,.5)',
+          }
+        : {
+            backgroundColor: '#fff',
+          };
+    },
+  },
 }
 </script>
+
 <template>
     <!-- Section Jumbotron -->
-    <section id="jumbotron-section">
+    <section id="jumbotron-section" :style="navbarStyle">
         <div id="jumbotron" class="d-flex align-items-center justify-content-center">
           <div class="row d-flex align-items-center justify-content-center">
             <!-- Profile Description -->
-            <div class="col-8">
+            <div class="col-8" >
               <div class="container-hand">
-                <h1>Jr Full-Stack Web Developer <img src="../../../assets/img/handlogo.png" alt="hand img"></h1>
+                <h1 :style="{ color: isDarkText ? '#fff' : 'inherit' }">Jr Full-Stack Web Developer <img src="../../../assets/img/handlogo.png" alt="hand img"></h1>
               </div>
               <p class="description-text">Hi, I'm Stefan Simerea. A passionate Jr Full-Stack Web Developer based in Pescara, Italy. 📍</p>
-              <p class="d-flex align-items-center">
+              <p class="d-flex align-items-center" :style="{ color: isDarkText ? '#fff' : 'inherit' }" >
                 <!-- Linkedin logo -->
-                <a href="https://www.linkedin.com/in/stefan-simerea-929794291/" target="_blank">
+                <a href="https://www.linkedin.com/in/stefan-simerea-929794291/" target="_blank" >
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-linkedin" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"></path><path d="M12 16l0 -5"></path><path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg>
                 </a>
                 <!-- GitHub logo -->
@@ -136,14 +149,21 @@ h1{
 }
 
 // Hover effects tag a
-a {
-  color: black;
+p a, p a:visited {
+  font-family: $Font;
+  font-weight: bold;
+  font-size: 17px;
+  color: inherit;
   transition: color 0.3s;
 
   &:hover {
     color: #147efb; 
   }
 }
+
+
+
+
 
 // Technologies effects
 .technologies ul li img{

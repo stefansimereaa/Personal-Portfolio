@@ -1,42 +1,41 @@
 <script>
 export default {
   name: 'AppHeader',
-  data() {
-    return {
-      isDarkMode: false,
-      isDarkText: false
-    };
-  },
   computed: {
     navbarStyle() {
-      if (this.isDarkMode) {
-        // Imposta il testo in modalità scura
-        this.isDarkText = true;
-        return {
-          backgroundColor: '#181a1e',
-          color: '#fff',
-          boxShadow: '0 0 10px rgba(255,255,255,.5)',
-        };
-      } else {
-        // Imposta il testo in modalità chiara
-        this.isDarkText = false; 
-        return {
-          backgroundColor: '#fff',
-        };
-      }
+      return this.$store.state.isDarkMode
+        ? {
+            backgroundColor: '#181a1e',
+            color: 'white',
+          }
+        : {
+            backgroundColor: '#fff',
+          };
+    },
+    isDarkText() {
+      return this.$store.state.isDarkText;
     },
     darkModeActive() {
-      return this.isDarkMode ? 'active' : '';
+      return this.$store.state.isDarkMode ? 'active' : '';
     },
   },
   methods: {
-    toggleLightMode() {
+  toggleLightMode() {
+    if (this.$store.state.isDarkMode) {
+      this.$store.commit('toggleDarkMode');
+      this.isLightMode = true;
       this.isDarkMode = false;
-    },
-    toggleDarkMode() {
+    }
+  },
+  toggleDarkMode() {
+    if (!this.$store.state.isDarkMode) {
+      this.$store.commit('toggleDarkMode');
+      this.isLightMode = false;
       this.isDarkMode = true;
     }
-  }
+  },
+}
+
 };
 </script>
 
@@ -52,7 +51,7 @@ export default {
         <!-- Logo a sinistra -->
         <a href="#" class="navbar-brand d-flex align-items-center logo-container">
           <img src="../../assets/img/CodingLogo.png" alt="Logo Portfolio" class="logo">
-          <h3 class="ms-1" :style="{ color: isDarkText ? '#fff' : 'inherit' }">Stefan.dev</h3>
+          <h3 class="ms-2 my-2" :style="{ color: isDarkText ? '#fff' : 'inherit' }">Stefan.dev</h3>
         </a>
 
         <div class="container-links">
@@ -71,7 +70,7 @@ export default {
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
-              <li class="dark-mode" :class="darkModeActive">
+              <li class="dark-mode d-flex my-1 ms-2" :class="darkModeActive">
                 <span class="material-icons-sharp " :class="{ active: !isDarkMode }" @click="toggleLightMode"> light_mode </span>
                 <span class="material-icons-sharp " :class="{ active: isDarkMode }" @click="toggleDarkMode"> dark_mode </span>
               </li>
