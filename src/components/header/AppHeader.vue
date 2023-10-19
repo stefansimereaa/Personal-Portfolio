@@ -104,12 +104,20 @@ export default {
                 <a class="nav-link" href="#portfolio" :class="{ 'd-none': isItalian }">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <!-- Italian Version -->
+                <a class="nav-link" href="#contact" :class="{ 'd-none': !isItalian }">Contatti</a>
+                <!-- English Version -->
+                <a class="nav-link" href="#contact" :class="{ 'd-none': isItalian }">Contact</a>
               </li>
+
+
+              <!-- Dark Mode Toggles -->
               <li class="dark-mode d-flex my-1 ms-2" :class="darkModeActive">
                 <span class="material-icons-sharp" :class="{ active: !isDarkMode }" @click="toggleLightMode"> light_mode </span>
                 <span class="material-icons-sharp " :class="{ active: isDarkMode }" @click="toggleDarkMode"> dark_mode </span>
               </li>
+
+              <!-- Language Change Toggles -->
               <li class="dark-mode my-1 ms-3" :class="languageActive">
                 <!-- Italian Flag -->
                 <span class="flag-icon flag-icon-it" style="width: 10px; padding: 12px;" :class="{ active: !languageActive }" @click="toggleLanguageIt"></span>
