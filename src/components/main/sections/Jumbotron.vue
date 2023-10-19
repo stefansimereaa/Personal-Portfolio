@@ -35,7 +35,9 @@ export default {
 
 
               <!-- Italian Version -->
-              <p :class="{ 'd-none': !$store.state.isItalian }" class="description-text">Ciao, sono Stefan Simerea. Un appassionato sviluppatore web Jr Full-Stack con sede a Pescara, Italia. 📍</p>
+              <p :class="{ 'd-none': !$store.state.isItalian }" class="description-text">
+                Ciao, sono Stefan Simerea, uno sviluppatore web Jr Full-Stack con sede a Pescara, Italia. 📍
+              </p>
               <!-- English Version -->
               <p :class="{ 'd-none': $store.state.isItalian }" class="description-text">Hi, I'm Stefan Simerea. A passionate Jr Full-Stack Web Developer based in Pescara, Italy. 📍</p>
 
@@ -57,7 +59,12 @@ export default {
             <!-- Technologies row -->
             <div class="row mt-5">
               <div class="container d-flex align-items-center p-0">
-                <p class="text-technologies">Tech Stack |</p>
+
+                <!-- Italian Version -->
+                <p class="text-technologies" :class="{ 'd-none': !$store.state.isItalian }">Tecnologie Utilizzate |</p>
+                <!-- English Version -->
+                <p class="text-technologies" :class="{ 'd-none': $store.state.isItalian }">Tech Stack |</p>
+                
                 <div class="technologies">
                   <ul class="d-flex align-items-center">
                     <!-- Html -->
