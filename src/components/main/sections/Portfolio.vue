@@ -158,7 +158,7 @@ export default {
         </div>
 
         <!-- Project 4 -->
-        <div class="card card-normal mb-5" :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]">
+        <div class="card card-normal d-none mb-5" :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]">
           <!-- Link project -->
           <div class="col-5 d-flex flex-column justify-content-center align-items-center">
             <div class="container d-flex flex-column justify-content-center align-items-center">
