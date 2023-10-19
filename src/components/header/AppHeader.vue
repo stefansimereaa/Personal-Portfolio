@@ -4,6 +4,7 @@ export default {
   data() {
     return {
       isDarkMode: false,
+      isGb: false,
     };
   },
   computed: {
@@ -23,8 +24,13 @@ export default {
     darkModeActive() {
       return this.$store.state.isDarkMode ? 'active' : '';
     },
+    languageActive() {
+    return this.$store.state.isGb ? 'active' : '';
+  },
   },
   methods: {
+  // Dark Mode Toggles
+  // // Lightmode Toggle
   toggleLightMode() {
     if (this.$store.state.isDarkMode) {
       this.$store.commit('toggleDarkMode');
@@ -32,12 +38,24 @@ export default {
       this.isDarkMode = false;
     }
   },
+  // Darkmode Toggle
   toggleDarkMode() {
     if (!this.$store.state.isDarkMode) {
       this.$store.commit('toggleDarkMode');
       this.isLightMode = false;
       this.isDarkMode = true;
     }
+  },
+  // Languages Toggle
+  // Italian language Toggle
+  toggleLanguageIt() {
+    this.$store.commit('toggleLanguageItalian', true);
+    this.$store.commit('toggleLanguageGb', false);
+  },
+  // English language Toggle
+  toggleLanguageGb() {
+    this.$store.commit('toggleLanguageItalian', false);
+    this.$store.commit('toggleLanguageGb', true);
   },
 }
 
@@ -82,9 +100,9 @@ export default {
               </li>
               <li class="dark-mode my-1 ms-3" :class="languageActive">
                 <!-- Italian Flag -->
-                <span class="flag-icon flag-icon-it" style="width: 10px; padding: 12px;" :class="{ active: !languageActive }" @click="togglelanguageActive"></span>
+                <span class="flag-icon flag-icon-it" style="width: 10px; padding: 12px;" :class="{ active: !languageActive }" @click="toggleLanguageIt"></span>
                 <!-- English Flag --> 
-                <span class="flag-icon flag-icon-gb" style="width: 10px; padding: 12px;" :class="{ active: languageActive }" @click="togglelanguageActive"></span>
+                <span class="flag-icon flag-icon-gb" style="width: 10px; padding: 12px;" :class="{ active: languageActive }" @click="toggleLanguageGb"></span>
               </li>
             </ul>
           </div>
