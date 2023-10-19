@@ -5,6 +5,7 @@ export default {
     return {
       isDarkMode: false,
       isGb: false,
+      isItalian: true,
     };
   },
   computed: {
@@ -18,12 +19,15 @@ export default {
             backgroundColor: '#fff',
           };
     },
+    // Change class color text for Dark Mode
     isDarkText() {
       return this.$store.state.isDarkText;
     },
+    // Change class active for toggle Dark Mode
     darkModeActive() {
       return this.$store.state.isDarkMode ? 'active' : '';
     },
+    // Change class active for toggle Language active
     languageActive() {
     return this.$store.state.isGb ? 'active' : '';
   },
@@ -51,11 +55,13 @@ export default {
   toggleLanguageIt() {
     this.$store.commit('toggleLanguageItalian', true);
     this.$store.commit('toggleLanguageGb', false);
+    this.isItalian = true; // Imposta la lingua su Italiano
   },
   // English language Toggle
   toggleLanguageGb() {
     this.$store.commit('toggleLanguageItalian', false);
     this.$store.commit('toggleLanguageGb', true);
+    this.isItalian = false; // Imposta la lingua su Inglese
   },
 }
 
@@ -86,10 +92,16 @@ export default {
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#aboutme">About</a>
+                <!-- Italian Version -->
+                <a class="nav-link" href="#aboutme" :class="{ 'd-none': !isItalian }">Informazioni</a>
+                <!-- English Version -->
+                <a class="nav-link" href="#aboutme" :class="{ 'd-none': isItalian }">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Projects</a>
+                <!-- Italian Version -->
+                <a class="nav-link" href="#portfolio" :class="{ 'd-none': !isItalian }">Progetti</a>
+                <!-- English Version -->
+                <a class="nav-link" href="#portfolio" :class="{ 'd-none': isItalian }">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
