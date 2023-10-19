@@ -3,6 +3,8 @@
 export default {
   name: 'Contact',
   props: {
+  isItalian: Boolean,
+  isGb: Boolean,
   isDarkMode: Boolean,
   isDarkText: Boolean,
   },
@@ -26,8 +28,15 @@ export default {
     <div class="container">
         <!-- Contact Title -->
         <div class="contact-title">
-          <p :style="{ color: '#147efb' }">CONTACT</p>
-          <h3 :style="{ color: isDarkText ? '#fff' : 'inherit' }">Don't be shy! Hit me up! 👇</h3>
+          <!-- Italian Version -->
+          <p :style="{ color: '#147efb' }" :class="{ 'd-none': !$store.state.isItalian }">CONTATTI</p>
+          <!-- English Version -->
+          <p :style="{ color: '#147efb' }" :class="{ 'd-none': $store.state.isItalian }">CONTACT</p>
+
+          <!-- Italian Version -->
+          <h3 :style="{ color: isDarkText ? '#fff' : 'inherit' }" :class="{ 'd-none': !$store.state.isItalian }">Non essere timido! Contattami! 👇</h3>
+          <!-- English Version -->
+          <h3 :style="{ color: isDarkText ? '#fff' : 'inherit' }" :class="{ 'd-none': $store.state.isItalian }">Don't be shy! Hit me up! 👇</h3>
         </div>
         <!-- Contact Icons -->
         <div class="contact-icons d-flex">
@@ -39,8 +48,14 @@ export default {
             </span>
             <!-- Info Location -->
             <div class="contact-info ms-3">
-              <h3>Location</h3>
-              <a href="https://maps.app.goo.gl/Ve3CVBgDRHdb5mYAA" target="_blank" class="color-hover" >Pescara, Italy</a>
+              <!-- Italian Version -->
+              <h3 :class="{ 'd-none': !$store.state.isItalian }">Località</h3>
+              <!-- English Version -->
+              <h3 :class="{ 'd-none': $store.state.isItalian }">Location</h3>
+              <!-- Italian Version -->
+              <a href="https://maps.app.goo.gl/Ve3CVBgDRHdb5mYAA" target="_blank" class="color-hover" :class="{ 'd-none': !$store.state.isItalian }">Pescara, Italia</a>
+              <!-- English Version -->
+              <a href="https://maps.app.goo.gl/Ve3CVBgDRHdb5mYAA" target="_blank" class="color-hover" :class="{ 'd-none': $store.state.isItalian }">Pescara, Italy</a>
             </div>
           </div>
           <!-- Email INFO -->
@@ -51,7 +66,10 @@ export default {
             </span>
             <!-- Info Email -->
             <div class="contact-info ms-3">
-              <h3>Mail</h3>
+              <!-- Italian Version -->
+              <h3 :class="{ 'd-none': !$store.state.isItalian }">Email</h3>
+              <!-- English Version -->
+              <h3 :class="{ 'd-none': $store.state.isItalian }">Mail</h3>
               <a class="color-hover" target="_blank" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=stefanosimerea15@gmail.com">stefanosimerea15@gmail.com</a>
             </div>
           </div>

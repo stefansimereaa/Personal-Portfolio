@@ -2,6 +2,8 @@
   export default {
   name: 'AppFooter',
   props: {
+  isItalian: Boolean,
+  isGb: Boolean,
   isDarkMode: Boolean,
   isDarkText: Boolean,
   },
@@ -20,12 +22,15 @@
 }
 </script>
 <template>
-  <footer :style="[$store.state.isDarkMode ? navbarStyle : { 'background-color': '#2D2E32' }]">
-    <div class="container py-5">
+  <footer class="py-5" :style="[$store.state.isDarkMode ? navbarStyle : { 'background-color': '#2D2E32' }]">
+    <div class="container">
       <div class="row d-flex align-items-center justify-content-between">
         <!-- Logos Copyrights -->
         <div class="col">
-          <h5 class="text-copyright">Copyright © 2023. All rights are reserved</h5>
+          <!-- Italian Version -->
+          <h5 class="text-copyright my-3" :class="{ 'd-none': !$store.state.isItalian }">Copyright © 2023. Tutti i diritti sono riservati</h5>
+          <!-- English Version -->
+          <h5 class="text-copyright my-3" :class="{ 'd-none': $store.state.isItalian }">Copyright © 2023. All rights are reserved</h5>
         </div>
         <!-- Logos Footer -->
         <div class="col-2 d-flex align-items-center px-5">
