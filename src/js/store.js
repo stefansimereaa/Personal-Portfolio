@@ -2,7 +2,7 @@ import { createStore } from 'vuex';
 
 export default createStore({
   state: {
-    isItalian: false,
+    isItalian: true,
     isGb: false,
     isDarkMode: false,
     isDarkText: false,

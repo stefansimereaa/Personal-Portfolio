@@ -10,6 +10,8 @@ import AppFooter from './footer/AppFooter.vue';
   name: 'AppHomepage',
   components: { AppHeader, AppMain, AppFooter },
   props: {
+  isItalian: Boolean,
+  isGb: Boolean, 
   isDarkMode: Boolean,
   isDarkText: Boolean,
   },
@@ -20,9 +22,19 @@ import AppFooter from './footer/AppFooter.vue';
 <!-- Component AppHeader -->
 <AppHeader />
 <!-- Component AppMain -->
-<AppMain :isDarkMode="isDarkMode" :isDarkText="isDarkText"  />
+<AppMain 
+:isDarkMode="isDarkMode" 
+:isDarkText="isDarkText" 
+:isItalian="isItalian"
+:isGb="isGb" 
+/>
 <!-- Component AppFooter -->
-<AppFooter :isDarkMode="isDarkMode" :isDarkText="isDarkText"/>
+<AppFooter 
+:isDarkMode="isDarkMode" 
+:isDarkText="isDarkText" 
+:isItalian="isItalian"
+:isGb="isGb"
+/>
 </template>
 
 <style lang="scss" scoped>

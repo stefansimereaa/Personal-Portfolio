@@ -30,7 +30,7 @@ export default {
     // Change class active for toggle Language active
     languageActive() {
     return this.$store.state.isGb ? 'active' : '';
-  },
+    },
   },
   methods: {
   // Dark Mode Toggles

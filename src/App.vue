@@ -4,6 +4,8 @@ import AppHomepage from './components/AppHomepage.vue';
 export default {
   components: { AppHomepage },
   props: {
+  isItalian: Boolean,
+  isGb: Boolean,  
   isDarkMode: Boolean,
   isDarkText: Boolean,
   },
@@ -16,7 +18,7 @@ export default {
     <div>
       <!-- Component AppHomepage -->
       <div class="div" v-if="!$route.path.includes('/discord')">
-        <AppHomepage />
+        <AppHomepage/>
       </div>
       <router-view v-if="$route.path.includes('/discord')"></router-view>
     </div>

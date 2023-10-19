@@ -2,6 +2,8 @@
 export default {
   name: 'Jumbotron',
   props: {
+  isItalian: Boolean,
+  isGb: Boolean,
   isDarkMode: Boolean,
   isDarkText: Boolean,
   },
@@ -30,7 +32,13 @@ export default {
               <div class="container-hand">
                 <h1 :style="{ color: isDarkText ? '#fff' : 'inherit' }">Jr Full-Stack Web Developer <img src="../../../assets/img/handlogo.png" alt="hand img"></h1>
               </div>
-              <p class="description-text">Hi, I'm Stefan Simerea. A passionate Jr Full-Stack Web Developer based in Pescara, Italy. 📍</p>
+
+
+              <!-- Italian Version -->
+              <p :class="{ 'd-none': !$store.state.isItalian }" class="description-text">Ciao, sono Stefan Simerea. Un appassionato sviluppatore web Jr Full-Stack con sede a Pescara, Italia. 📍</p>
+              <!-- English Version -->
+              <p :class="{ 'd-none': $store.state.isItalian }" class="description-text">Hi, I'm Stefan Simerea. A passionate Jr Full-Stack Web Developer based in Pescara, Italy. 📍</p>
+
               <p class="d-flex align-items-center" :style="{ color: isDarkText ? '#fff' : 'inherit' }" >
                 <!-- Linkedin logo -->
                 <a href="https://www.linkedin.com/in/stefan-simerea-929794291/" target="_blank" >
