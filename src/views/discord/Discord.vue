@@ -19,7 +19,7 @@
     <!-- Header -->
     <header>
         <nav id="navigation-menu">
-            <div class="logo"><img src="src/views/discord/img/logo.svg" alt="Logo" /></div>
+            <div class="logo"><img src="src/views/discord/img/logoDiscord.svg" alt="Logo" /></div>
             <div class="link">
                 <ul class="header-list">
                     <li class="header-element"><a href="#">Scarica</a></li>
