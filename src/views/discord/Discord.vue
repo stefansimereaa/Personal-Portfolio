@@ -19,7 +19,7 @@
     <!-- Header -->
     <header>
         <nav id="navigation-menu">
-            <div class="logo"><img src="src/views/discord/img/logoDiscord.svg" alt="Logo" /></div>
+            <div class="logo"><img src="../../../src/assets/img/discord/logoDiscord.svg" alt="Logo" /></div>
             <div class="link">
                 <ul class="header-list">
                     <li class="header-element"><a href="#">Scarica</a></li>
@@ -48,7 +48,7 @@
         <!-- Section 1 -->
         <section class="section1">
             <div class="section1-img">
-                <img src="src/views/discord/img/item1.svg" alt="study-group">
+                <img src="../../../src/assets/img/discord/item1.svg" alt="study-group">
             </div>
             <div class="section1-content">
                 <h1 class="section-title">Un luogo a invito con tutto lo spazio necessario per parlare</h1>
@@ -63,7 +63,7 @@
                 <p class="section-text">Mettiti comodo in un canale vocale quando hai tempo. Gli amici nel tuo server possono vedere che sei li e unirsi instantaneamente senza dover chiamare.</p>
             </div>
             <div class="section2-img">
-                <img src="src/views/discord/img/item2.svg" alt="voice-connected">
+                <img src="../../../src/assets/img/discord/item2.svg" alt="voice-connected">
             </div>
         </section>   
         <div class="wave upside-down"></div>
@@ -72,7 +72,7 @@
         <!-- Section 3 -->
         <section class="section3">
             <div class="section3-img">
-                <img src="src/views/discord/img/item3.svg" alt="Community">
+                <img src="../../../src/assets/img/discord/item3.svg" alt="Community">
             </div>
             <div class="section3-content">
                 <h1 class="section-title">Da pochi a un fandom</h1>
@@ -89,7 +89,7 @@
                 <p class="section-text">Video e audio a bassa latenza ti faranno sentire come se foste tutti nella stessa stanza. Fai ciao in video, guarda gli amici giocare in streaming, o riunitevi in una sessione di disegno con la condivisione schermo.</p>
             </div>
             <div class="section4-img">
-                <img src="src/views/discord/img/item4-big.svg" alt="video-call">
+                <img src="../../../src/assets/img/discord/item4-big.svg" alt="video-call">
             </div>
         <div class="stars">
             <div class="bottom-download">
@@ -106,7 +106,7 @@
             <div class="footer-med-content">
                 <h2 class="footer-title-med">Il tuo posto per parlare</h2>
                 <div class="language">
-                    <img src="src/views/discord/img/ita.png" alt="italian-language">
+                    <img src="../../../src/assets/img/discord/ita.png" alt="italian-language">
                     <h4>Italiano <i class="fa-solid fa-angle-down"></i></h4>
 
                 </div>
@@ -169,7 +169,7 @@
         <div class="last-content-footer">
             <div class="content">
                 <div class="logo-footer">
-                    <img src="src/views/discord/img/logo.svg" alt="logo">
+                    <img src="../../../src/assets/img/discord/logoDiscord.svg" alt="logo">
                 </div>
                 <div class="button-footer">
                     <button class="button-pink-footer">Registrati</button>
@@ -210,7 +210,7 @@ body{
 
 /* Waves */
 .wave{
-    background-image: url('src/views/discord/img/wave.svg');
+    background-image: url('../../../src/assets/img/discord/wave.svg');
     height: 100px;
     display: block;
     opacity: 0.1;
@@ -229,7 +229,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image:url(img/jumbo.png);
+    background-image:url(../../../src/assets/img/discord/jumbo.png);
     background-size: cover;
     flex-wrap: wrap;
 }
@@ -419,7 +419,7 @@ p{
     margin-top: 20px;
 }
 .stars{
-    background-image: url(src/views/discord/img/stars.svg);
+    background-image: url(../../../src/assets/img/discord/stars.svg);
     height: 50px;
     display: block;
 }
