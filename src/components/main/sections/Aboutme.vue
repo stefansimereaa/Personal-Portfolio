@@ -35,7 +35,7 @@ export default {
             <img src="../../../assets/img/gifpc.png" alt="avatar photo" id="second-img">
             <span>
               <!-- Photo text -->
-              <img src="../../../assets/img/Junior Web Developer.png" alt="" id="third-img">
+              <img src="../../../assets/img/JuniorWebDeveloper.png" alt="" id="third-img">
             </span>
           </div>
         </div>
