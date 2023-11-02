@@ -132,6 +132,7 @@ span{
 }
 
 
+
 // Responsive for small mobile devices 
 @media (max-width: 576px) {
   .contact-email{
