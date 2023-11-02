@@ -85,7 +85,7 @@ footer{
 // Responsive for mobile 
 @media (min-width: 576px) {
   h5{
-    font-size: 17px;
+    font-size: 16px;
   }
   .col-2{
     margin-right: 50px;
