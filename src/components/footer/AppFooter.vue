@@ -67,4 +67,24 @@ footer{
     margin: 0px;
   }
 }
+
+// Responsive for mobile
+@media (max-width: 576px) {
+  footer{
+    width: 200%;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+
+// Responsive for tablet
+@media (min-width: 768px) {
+
+}
+
+// Responsive for notebooks
+@media (min-width: 992x) {
+
+}
 </style>
