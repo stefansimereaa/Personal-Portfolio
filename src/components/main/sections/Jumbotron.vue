@@ -120,7 +120,7 @@ export default {
 
 // Photo profile style and effects
 .col-photo {
-  background-image: url(../../../assets/img/);
+  background-image: url(../../../assets/img/Stefan.jpg);
   width: 20rem;
   height: 20rem;
   background-size: cover;
