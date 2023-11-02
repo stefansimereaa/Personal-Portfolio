@@ -56,6 +56,8 @@ footer{
   height: 150px;
 }
 
+
+
 .col-2 a {
   color: white;
   transition: color 0.3s;
@@ -68,12 +70,25 @@ footer{
   }
 }
 
-// Responsive for mobile
+// Responsive for small mobile devices 
 @media (max-width: 576px) {
-  footer{
-    width: 200%;
-    margin: 0px;
-    padding: 0px;
+  h5{
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  .col-2{
+    margin-right: 40px;
+  }
+}
+
+
+// Responsive for mobile 
+@media (min-width: 576px) {
+  h5{
+    font-size: 17px;
+  }
+  .col-2{
+    margin-right: 50px;
   }
 }
 
