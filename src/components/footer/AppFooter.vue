@@ -53,7 +53,7 @@
 footer{
   background-color: #2D2E32;
   color: white;
-  height: 150px;
+  height: 160px;
 }
 
 .text-copyright{
