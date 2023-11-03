@@ -84,6 +84,7 @@ export default {
   box-shadow: 0 0 10px rgba(0,0,0, .1);
 }
 
+// Second img style
 #second-img{
   max-width: 60px;
   position: absolute;
@@ -130,4 +131,175 @@ export default {
   color: #767676;
 }
 
+
+
+// Responsive for small mobile devices 
+@media (max-width: 576px) {
+  // First img style
+  #first-img{
+  width: 380px;
+  }
+
+  // Second img style
+  #second-img{
+    max-width: 50px;
+    position: absolute;
+    left: 77%;
+    bottom: 7%;
+    z-index: 1;
+  }
+
+  // Third img keyframe and rotation
+  #third-img {
+    max-width: 140px;
+    position: absolute;
+    left: 66%;
+    bottom: -10%;
+    border-radius: 50%;
+  }
+
+  h3{
+    margin-top: 20px;
+  }
+
+  p{
+    max-width: 383px;
+  }
+}
+
+// Responsive for mobile devices 
+@media (min-width: 576px) {
+  // First img style
+  #first-img{
+  width: 500px;
+  }
+
+  // Second img style
+  #second-img{
+    max-width: 60px;
+    position: absolute;
+    left: 82%;
+    bottom: 5%;
+    z-index: 1;
+  }
+
+  // Third img keyframe and rotation
+  #third-img {
+    max-width: 160px;
+    position: absolute;
+    left: 72%;
+    bottom: -10%;
+    border-radius: 50%;
+  }
+
+  h3{
+    margin-top: 20px;
+  }
+
+  p{
+    max-width: 500px;
+  }
+}
+
+// Responsive for tablet
+@media (min-width: 768px) {
+  // First img style
+  #first-img{
+  width: 690px;
+  }
+
+  // Second img style
+  #second-img{
+    max-width: 70px;
+    position: absolute;
+    left: 85%;
+    bottom: 2%;
+    z-index: 1;
+  }
+
+  // Third img keyframe and rotation
+  #third-img {
+    max-width: 180px;
+    position: absolute;
+    left: 77%;
+    bottom: -10%;
+    border-radius: 50%;
+  }
+
+  h3{
+    margin-top: 20px;
+  }
+
+  p{
+    max-width: 700px;
+  }
+}
+
+// Responsive for notebooks
+@media (min-width: 992px) {  
+ // First img style
+ #first-img{
+  width: 935px;
+  }
+
+  // Second img style
+  #second-img{
+    max-width: 70px;
+    position: absolute;
+    left: 89%;
+    bottom: -1%;
+    z-index: 1;
+  }
+
+  // Third img keyframe and rotation
+  #third-img {
+    max-width: 180px;
+    position: absolute;
+    left: 83%;
+    bottom: -10%;
+    border-radius: 50%;
+  }
+
+  h3{
+    margin-top: 20px;
+  }
+
+  p{
+    max-width: 1000px;
+  }
+}
+
+// Responsive for desktops
+@media (min-width: 1400px) {  
+ // First img style
+ #first-img{
+  width: 700px;
+  }
+
+  // Second img style
+  #second-img{
+    max-width: 55px;
+    position: absolute;
+    left: 90%;
+    bottom: -1%;
+    z-index: 1;
+  }
+
+  // Third img keyframe and rotation
+  #third-img {
+    max-width: 140px;
+    position: absolute;
+    left: 84%;
+    bottom: -10%;
+    border-radius: 50%;
+  }
+
+  h3{
+    margin-top: 20px;
+  }
+
+  .container-description{
+    margin-left: 10px;
+  }
+}
 </style>
