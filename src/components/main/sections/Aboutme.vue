@@ -133,8 +133,8 @@ export default {
 
 
 
-// Responsive for small mobile devices 
-@media (max-width: 576px) {
+// Responsive for super small mobile devices 
+@media (max-width: 370px) {
   // First img style
   #first-img{
   width: 340px;
@@ -164,6 +164,40 @@ export default {
 
   p{
     max-width: 340px;
+  }
+}
+
+// Responsive for small mobile devices 
+@media (min-width: 410px) {
+  // First img style
+  #first-img{
+  width: 380px;
+  }
+
+  // Second img style
+  #second-img{
+    max-width: 43px;
+    position: absolute;
+    left: 82%;
+    bottom: 4%;
+    z-index: 1;
+  }
+
+  // Third img keyframe and rotation
+  #third-img {
+    max-width: 120px;
+    position: absolute;
+    left: 72%;
+    bottom: -10%;
+    border-radius: 50%;
+  }
+
+  h3{
+    margin-top: 20px;
+  }
+
+  p{
+    max-width: 380px;
   }
 }
 
