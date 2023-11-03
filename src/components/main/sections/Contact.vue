@@ -155,4 +155,22 @@ span{
     flex-direction: column;
   }
 }
+
+// Responsive for tablet
+@media (min-width: 768px) {
+
+}
+
+// Responsive for notebooks
+@media (min-width: 992px) {
+  
+  .contact-email{
+    margin-top: 0px;
+  }
+  .contact-icons{
+    display: flex;
+    flex-direction: row;
+  }
+
+}
 </style>
