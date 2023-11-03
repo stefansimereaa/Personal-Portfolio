@@ -142,18 +142,18 @@ export default {
 
   // Second img style
   #second-img{
-    max-width: 35px;
+    max-width: 32px;
     position: absolute;
-    left: 83%;
-    bottom: 5%;
+    left: 84%;
+    bottom: 4%;
     z-index: 1;
   }
 
   // Third img keyframe and rotation
   #third-img {
-    max-width: 110px;
+    max-width: 100px;
     position: absolute;
-    left: 72%;
+    left: 74%;
     bottom: -10%;
     border-radius: 50%;
   }
@@ -163,7 +163,7 @@ export default {
   }
 
   p{
-    max-width: 383px;
+    max-width: 340px;
   }
 }
 
