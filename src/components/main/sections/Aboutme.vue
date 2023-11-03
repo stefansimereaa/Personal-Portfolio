@@ -137,23 +137,23 @@ export default {
 @media (max-width: 576px) {
   // First img style
   #first-img{
-  width: 380px;
+  width: 340px;
   }
 
   // Second img style
   #second-img{
-    max-width: 50px;
+    max-width: 35px;
     position: absolute;
-    left: 77%;
-    bottom: 7%;
+    left: 83%;
+    bottom: 5%;
     z-index: 1;
   }
 
   // Third img keyframe and rotation
   #third-img {
-    max-width: 140px;
+    max-width: 110px;
     position: absolute;
-    left: 66%;
+    left: 72%;
     bottom: -10%;
     border-radius: 50%;
   }
