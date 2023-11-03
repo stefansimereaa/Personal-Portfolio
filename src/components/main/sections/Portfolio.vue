@@ -352,4 +352,97 @@ export default {
 .card{
   height: 500px;
 }
+
+
+
+// Responsive for super small mobile devices 
+@media (max-width: 370px) {
+  // Portfolio projects style
+.card .col-6{
+  height: 180px;
+  overflow: hidden;
+  width: 280px;
+}
+.card .col-6 img {
+  width: 100%;
+  height: auto;
+  transform: translateY(0%);
+  transition: transform 10s ease-in-out 0s;
+}
+
+// Portfolio projects img
+.card .col-6:hover img {
+  transform: translateY(-69%);
+}
+.card-normal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card{
+  height: 630px;
+}
+// Da ordinare
+.col-5 .description-project{
+  width: 280px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.col-5 p{
+  color: #767676;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: none;
+  margin-bottom: 40px;
+}
+
+.stacks p{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  color: #000;
+  font-weight: 650;
+  font-size: 13px;
+  padding: 0.5rem 1.4rem;
+}
+
+.date-time{
+  color: hsla(0,5%,8%,.773);
+  font-size: 15px;
+  margin-left: 0.2rem;
+  margin-bottom: 10px;
+  display: flex;
+  width: 100px;
+}
+h3{
+  font-size: 15px;
+  display: flex;
+}
+
+.links a{
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+}
+
+
+// Responsive for mobile devices 
+@media (min-width: 576px) {
+  
+}
+
+// Responsive for notebooks
+@media (min-width: 992px) {  
+ 
+}
+
+// Responsive for desktops
+@media (min-width: 1400px) {  
+ 
+}
 </style>

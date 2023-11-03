@@ -33,7 +33,7 @@
           <h5 class="text-copyright my-3" :class="{ 'd-none': $store.state.isItalian }">Copyright © 2023. All rights are reserved</h5>
         </div>
         <!-- Logos Footer -->
-        <div class="col-2 d-flex align-items-center px-5">
+        <div class="col-2 d-flex align-items-center">
             <!-- Linkedin logo -->
             <a href="https://www.linkedin.com/in/stefan-simerea-929794291/" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-linkedin" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"></path><path d="M12 16l0 -5"></path><path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg>
@@ -56,6 +56,10 @@ footer{
   height: 150px;
 }
 
+.text-copyright{
+  font-size: 20px;
+  margin-right: 20px;
+}
 
 
 .col-2 a {
@@ -74,7 +78,7 @@ footer{
 @media (max-width: 576px) {
   h5{
     margin-left: 20px;
-    font-size: 18px;
+    font-size: 17;
   }
   .col-2{
     margin-right: 40px;
@@ -95,11 +99,16 @@ footer{
 
 // Responsive for tablet
 @media (min-width: 768px) {
-
+  .col-2{
+    margin-right: -40px;
+  }
 }
 
 // Responsive for notebooks
 @media (min-width: 992x) {
 
+  .col-2{
+    margin-right: 20px;
+  }
 }
 </style>
