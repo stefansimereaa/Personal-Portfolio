@@ -428,21 +428,580 @@ h3{
   margin-right: 20px;
 }
 
+
+#showMoreButton{
+  position: absolute;
+  left: 20%;
+  background-color: #2d2e32;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton:hover{
+  background-color: #147efb;
+}
+
+#showMoreButton2{
+  position: absolute;
+  left: 20%;
+  background-color: #2d2e32;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton2:hover{
+  background-color: #147efb;
+}
+
+}
+
+
+// Responsive for small mobile devices 
+@media (min-width: 410px) {
+  // Portfolio projects style
+.card .col-6{
+  height: 180px;
+  overflow: hidden;
+  width: 280px;
+}
+.card .col-6 img {
+  width: 100%;
+  height: auto;
+  transform: translateY(0%);
+  transition: transform 10s ease-in-out 0s;
+}
+
+// Portfolio projects img
+.card .col-6:hover img {
+  transform: translateY(-69%);
+}
+.card-normal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card{
+  height: 630px;
+}
+// Da ordinare
+.col-5 .description-project{
+  width: 280px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.col-5 p{
+  color: #767676;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: none;
+  margin-bottom: 40px;
+}
+
+.stacks p{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  color: #000;
+  font-weight: 650;
+  font-size: 13px;
+  padding: 0.5rem 1.4rem;
+}
+
+.date-time{
+  color: hsla(0,5%,8%,.773);
+  font-size: 15px;
+  margin-left: 0.2rem;
+  margin-bottom: 10px;
+  display: flex;
+  width: 100px;
+}
+h3{
+  font-size: 15px;
+  display: flex;
+}
+
+.links a{
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+
+#showMoreButton{
+  position: absolute;
+  left: 23%;
+  background-color: #2d2e32;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton:hover{
+  background-color: #147efb;
+}
+
+#showMoreButton2{
+  position: absolute;
+  left: 23%;
+  background-color: #2d2e32;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton2:hover{
+  background-color: #147efb;
+}
+
 }
 
 
 // Responsive for mobile devices 
 @media (min-width: 576px) {
-  
+  // Portfolio projects style
+.card .col-6{
+  height: 250px;
+  overflow: hidden;
+  width: 460px;
 }
+.card .col-6 img {
+  width: 100%;
+  height: auto;
+  transform: translateY(0%);
+  transition: transform 10s ease-in-out 0s;
+}
+
+// Portfolio projects img
+.card .col-6:hover img {
+  transform: translateY(-73%);
+}
+.card-normal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card{
+  height: 630px;
+}
+// Da ordinare
+.col-5 .description-project{
+  width: 460px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.col-5 p{
+  color: #767676;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: none;
+  margin-bottom: 40px;
+}
+
+.stacks p{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  color: #000;
+  font-weight: 650;
+  font-size: 13px;
+  padding: 0.5rem 1.4rem;
+}
+
+.date-time{
+  color: hsla(0,5%,8%,.773);
+  font-size: 15px;
+  margin-left: 0.2rem;
+  margin-bottom: 10px;
+  display: flex;
+  width: 100px;
+}
+h3{
+  font-size: 15px;
+  display: flex;
+}
+
+.links a{
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+
+#showMoreButton{
+  position: absolute;
+  left: 30%;
+  background-color: #2d2e32;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton:hover{
+  background-color: #147efb;
+}
+
+#showMoreButton2{
+  position: absolute;
+  left: 30%;
+  background-color: #2d2e32;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton2:hover{
+  background-color: #147efb;
+}
+
+}
+
+// Responsive for tablet
+@media (min-width: 768px) {
+// Portfolio projects style
+.card .col-6{
+  height: 400px;
+  overflow: hidden;
+  width: 600px;
+}
+.card .col-6 img {
+  width: 100%;
+  height: auto;
+  transform: translateY(0%);
+  transition: transform 10s ease-in-out 0s;
+}
+
+// Portfolio projects img
+.card .col-6:hover img {
+  transform: translateY(-73%);
+}
+.card-normal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card{
+  height: 800px;
+}
+// Da ordinare
+.col-5 .description-project{
+  width: 600px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.col-5 p{
+  color: #767676;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: none;
+  margin-bottom: 40px;
+}
+
+.stacks p{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  color: #000;
+  font-weight: 650;
+  font-size: 13px;
+  padding: 0.5rem 1.4rem;
+}
+
+.date-time{
+  color: hsla(0,5%,8%,.773);
+  font-size: 18px;
+  margin-left: 0.2rem;
+  margin-bottom: 10px;
+  display: flex;
+  width: 150px;
+}
+h3{
+  font-size: 18px;
+  display: flex;
+}
+
+.links a{
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+
+#showMoreButton{
+  position: absolute;
+  left: 35%;
+  background-color: #2d2e32;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton:hover{
+  background-color: #147efb;
+}
+
+#showMoreButton2{
+  position: absolute;
+  left: 35%;
+  background-color: #2d2e32;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton2:hover{
+  background-color: #147efb;
+}
+
+}
+
 
 // Responsive for notebooks
 @media (min-width: 992px) {  
+// Portfolio projects style
+.card .col-6{
+  height: 450px;
+  overflow: hidden;
+  width: 900px;
+}
+.card .col-6 img {
+  width: 100%;
+  height: auto;
+  transform: translateY(0%);
+  transition: transform 10s ease-in-out 0s;
+}
+
+// Portfolio projects img
+.card .col-6:hover img {
+  transform: translateY(-75%);
+}
+.card-normal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card{
+  height: 800px;
+}
+// Da ordinare
+.col-5 .description-project{
+  width: 900px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.col-5 p{
+  color: #767676;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: none;
+  margin-bottom: 40px;
+}
+
+.stacks p{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  color: #000;
+  font-weight: 650;
+  font-size: 13px;
+  padding: 0.5rem 1.4rem;
+}
+
+.date-time{
+  color: hsla(0,5%,8%,.773);
+  font-size: 18px;
+  margin-left: 0.2rem;
+  margin-bottom: 10px;
+  display: flex;
+  width: 150px;
+}
+h3{
+  font-size: 18px;
+  display: flex;
+}
+
+.links a{
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  margin-right: 20px;
+}
+
+
+#showMoreButton{
+  position: absolute;
+  left: 39%;
+  background-color: #2d2e32;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton:hover{
+  background-color: #147efb;
+}
+
+#showMoreButton2{
+  position: absolute;
+  left: 39%;
+  background-color: #2d2e32;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton2:hover{
+  background-color: #147efb;
+}
  
 }
 
 // Responsive for desktops
 @media (min-width: 1400px) {  
- 
+ // Portfolio projects style
+.card .col-6{
+  height: 400px;
+  overflow: hidden;
+  width: 600px;
+}
+.card .col-6 img {
+  width: 100%;
+  height: auto;
+  transform: translateY(0%);
+  transition: transform 10s ease-in-out 0s;
+}
+
+// Portfolio projects img
+.card .col-6:hover img {
+  transform: translateY(-67%);
+}
+.card-normal{
+  display: flex;
+  gap: 100px;
+  flex-direction: row;
+}
+.card{
+  height: 450px;
+}
+// Da ordinare
+.col-5 .description-project{
+  width: 500px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.col-5 p{
+  color: #767676;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: none;
+  margin-bottom: 40px;
+}
+
+.stacks p{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  color: #000;
+  font-weight: 650;
+  font-size: 15px;
+  padding: 0.5rem 1.4rem;
+}
+
+.date-time{
+  color: hsla(0,5%,8%,.773);
+  font-size: 20px;
+  margin-left: 0.2rem;
+  margin-bottom: 10px;
+  display: flex;
+  width: 150px;
+}
+h3{
+  font-size: 20px;
+  display: flex;
+}
+
+.links a{
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+
+#showMoreButton{
+  position: absolute;
+  left: 41%;
+  background-color: #2d2e32;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton:hover{
+  background-color: #147efb;
+}
+
+#showMoreButton2{
+  position: absolute;
+  left: 41%;
+  background-color: #2d2e32;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton2:hover{
+  background-color: #147efb;
+}
 }
 </style>
