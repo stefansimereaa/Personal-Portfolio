@@ -285,6 +285,10 @@ ul{
   margin-bottom: 20px;
   margin-left: 15px;
   }
+  .row{
+  width: 370px;
+  margin-bottom: 150px;
+  }
 }
 
 // Responsive for small mobile devices 
@@ -365,6 +369,10 @@ ul{
   max-width: 37px;
   margin-bottom: 20px;
   margin-left: 15px;
+  }
+  .row{
+  width: 410px;
+  margin-bottom: 150px;
   }
 }
 
@@ -449,6 +457,10 @@ ul{
   #container-tech{
     display: flex;
   }
+  .row{
+  width: 570px;
+  margin-bottom: 150px;
+  }
 }
 
 // Responsive for tablet
@@ -531,6 +543,10 @@ ul{
   }
   #container-tech{
     display: flex;
+  }
+  .row{
+  width: 760px;
+  margin-bottom: 150px;
   }
 }
 
@@ -615,6 +631,11 @@ ul{
   #container-tech{
     display: flex;
   }
+
+  .row{
+  width: 992px;
+  margin-bottom: 150px;
+  }
 }
 
 // Responsive for desktops
@@ -698,6 +719,11 @@ ul{
   }
   #container-tech{
     display: flex;
+  }
+
+  .row{
+  width: 1400px;
+  margin-bottom: 150px;
   }
 
 }

@@ -32,11 +32,11 @@ export default {
             <!-- Pc Photo -->
             <img src="../../../assets/img/coding.gif" alt="pc about me" id="first-img">
             <!-- Photo Avatar -->
-            <img src="../../../assets/img/gifpc.png" alt="avatar photo" id="second-img">
-            <span>
+            <!-- <img src="../../../assets/img/gifpc.png" alt="avatar photo" id="second-img">
+            <span> -->
               <!-- Photo text -->
-              <img src="../../../assets/img/JuniorWebDeveloper.png" alt="" id="third-img">
-            </span>
+              <!-- <img src="../../../assets/img/JuniorWebDeveloper.png" alt="" id="third-img">
+            </span> -->
           </div>
         </div>
         <!-- Description col -->
