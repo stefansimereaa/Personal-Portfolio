@@ -246,7 +246,7 @@ ul{
     background-position: center center;
     background-repeat: no-repeat;
     border: 3px solid $Black-Shade;
-    margin-left: -105px;
+    margin-left: -115px;
     animation: morph 8s ease-in-out infinite;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     position: relative;
@@ -286,7 +286,7 @@ ul{
   margin-left: 15px;
   }
   .row{
-  width: 370px;
+  width: 330px;
   margin-bottom: 150px;
   }
 }
