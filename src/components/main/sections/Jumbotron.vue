@@ -26,7 +26,7 @@ export default {
     <!-- Section Jumbotron -->
     <section id="jumbotron-section" :style="[$store.state.isDarkMode ? navbarStyle : { 'background-color': '#f9f9f9' }, $store.state.isDarkMode ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]">
         <div id="jumbotron" class="d-flex align-items-center justify-content-center">
-          <div class="row d-flex align-items-center justify-content-center">
+          <div class="row d-flex align-items-center justify-content-center" id="container-jumbo">
             <!-- Profile Description -->
             <div class="col-8" >
               <div class="container-hand">
@@ -57,8 +57,14 @@ export default {
               <div class="col-photo"></div>
             </div>
             <!-- Technologies row -->
-            <div class="row mt-5">
-              <div class="container d-flex align-items-center p-0">
+            <!-- da mettere 992px -->
+            <!-- <div id="technologies" class="row mt-5">
+              <div class="container d-flex align-items-center p-0"> -->
+
+
+
+            <div id="technologies" class="col mt-5">
+              <div class="container p-0">
 
                 <!-- Italian Version -->
                 <p class="text-technologies" :class="{ 'd-none': !$store.state.isItalian }">Tecnologie Utilizzate |</p>
@@ -201,5 +207,113 @@ ul{
   align-items: center;
   list-style-type: none;
   width: 500px;
+}
+
+
+
+// Responsive for super small mobile devices 
+@media (max-width: 370px) {
+  h1{
+  color: #2d2e32;
+  font-size: 55px;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  }
+
+  #container-jumbo{
+    display: flex;
+    flex-direction: column;
+  }
+  .col-8{
+    width: 360px;
+  }
+
+  // Hand style img
+  .container-hand {
+    position: relative;
+
+    img {
+      width: 50px;
+      position: absolute;
+      top: 73%;
+      margin-left: 10px;
+    }
+  }
+
+  // Photo profile style and effects
+  .col-photo {
+    background-image: url(../../../assets/img/Stefan.jpg);
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 3px solid $Black-Shade;
+    margin-left: -105px;
+    animation: morph 8s ease-in-out infinite;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    position: relative;
+    transition: all 1s ease-in-out;
+
+    @keyframes morph {
+      0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      }
+
+      50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+      }
+
+      100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      }
+    }
+  }
+
+  .text-technologies{
+    margin-left: 40px;
+  }
+
+  ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  width: 300px;
+  }
+
+  ul li img{
+  max-width: 37px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  }
+}
+
+// Responsive for small mobile devices 
+@media (min-width: 410px) {
+
+}
+
+// Responsive for mobile devices 
+@media (min-width: 576px) {
+
+}
+
+// Responsive for tablet
+@media (min-width: 768px) {
+
+}
+
+// Responsive for notebooks
+@media (min-width: 992px) {  
+ 
+}
+
+// Responsive for desktops
+@media (min-width: 1400px) {  
+ 
 }
 </style>
