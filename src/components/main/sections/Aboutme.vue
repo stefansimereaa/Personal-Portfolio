@@ -131,10 +131,8 @@ export default {
   color: #767676;
 }
 
-
-
 // Responsive for super small mobile devices 
-@media (max-width: 370px) {
+@media (min-width: 360px) {
   // First img style
   #first-img{
   width: 340px;
@@ -166,6 +164,75 @@ export default {
     max-width: 340px;
   }
 }
+
+// Responsive for super small mobile devices 
+@media (min-width: 370px) {
+  // First img style
+  #first-img{
+  width: 340px;
+  }
+
+  // Second img style
+  #second-img{
+    max-width: 32px;
+    position: absolute;
+    left: 84%;
+    bottom: 4%;
+    z-index: 1;
+  }
+
+  // Third img keyframe and rotation
+  #third-img {
+    max-width: 100px;
+    position: absolute;
+    left: 74%;
+    bottom: -10%;
+    border-radius: 50%;
+  }
+
+  h3{
+    margin-top: 20px;
+  }
+
+  p{
+    max-width: 340px;
+  }
+}
+
+// Responsive for super small mobile devices 
+@media (min-width: 380px) {
+  // First img style
+  #first-img{
+  width: 340px;
+  }
+
+  // Second img style
+  #second-img{
+    max-width: 32px;
+    position: absolute;
+    left: 84%;
+    bottom: 4%;
+    z-index: 1;
+  }
+
+  // Third img keyframe and rotation
+  #third-img {
+    max-width: 100px;
+    position: absolute;
+    left: 74%;
+    bottom: -10%;
+    border-radius: 50%;
+  }
+
+  h3{
+    margin-top: 20px;
+  }
+
+  p{
+    max-width: 340px;
+  }
+}
+
 
 // Responsive for small mobile devices 
 @media (min-width: 410px) {

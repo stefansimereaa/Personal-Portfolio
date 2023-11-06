@@ -296,9 +296,8 @@ li a:visited {
     color: #147efb;
   }
 }
-
 // Responsive for super small mobile devices
-@media (max-width: 370px) {
+@media (min-width: 360px) {
   
   .container-links {
   margin-right: 0px;
@@ -366,6 +365,146 @@ li a:visited {
     position: fixed;
   }
 }
+// Responsive for super small mobile devices
+@media (min-width: 370px) {
+  
+  .container-links {
+  margin-right: 0px;
+  }
+  .logo {
+  max-width: 55px;
+  }
+  .links {
+  margin-left: 0px;
+  }
+  /* Aggiungi la condizione per la larghezza e l'altezza solo quando la modalità scura è attiva */
+.navbar-toggler {
+  margin-right: 30px;
+  background-color: white;
+
+  /* Imposta larghezza e altezza solo in modalità scura */
+  .dark-mode & {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.navbar-toggler-icon{
+  .dark-mode & {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+}
+  .navbar-collapse {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+    text-align: center;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    margin-top: 0px; 
+    padding-bottom: 50px;
+  }
+
+
+  .dark-mode {
+    position: absolute;
+    top: 77%;
+    left: 27%;
+    border-radius: 0px;
+  }
+  .language-active{
+    position: absolute;
+    top: 77%;
+    left: 48%;
+  }
+  .navbar{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  .navbar{
+    width: 100%;
+    position: fixed;
+  }
+}
+
+// Responsive for super small mobile devices
+@media (min-width: 380px) {
+  
+  .container-links {
+  margin-right: 0px;
+  }
+  .logo {
+  max-width: 55px;
+  }
+  .links {
+  margin-left: 0px;
+  }
+  /* Aggiungi la condizione per la larghezza e l'altezza solo quando la modalità scura è attiva */
+.navbar-toggler {
+  margin-right: 30px;
+  background-color: white;
+
+  /* Imposta larghezza e altezza solo in modalità scura */
+  .dark-mode & {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.navbar-toggler-icon{
+  .dark-mode & {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+}
+  .navbar-collapse {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+    text-align: center;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    margin-top: 0px; 
+    padding-bottom: 50px;
+  }
+
+
+  .dark-mode {
+    position: absolute;
+    top: 77%;
+    left: 27%;
+    border-radius: 0px;
+  }
+  .language-active{
+    position: absolute;
+    top: 77%;
+    left: 48%;
+  }
+  .navbar{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  .navbar{
+    width: 100%;
+    position: fixed;
+  }
+}
+
 
 // Responsive for small mobile devices
 @media (min-width: 410px) {

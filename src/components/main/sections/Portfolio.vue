@@ -353,10 +353,224 @@ export default {
   height: 500px;
 }
 
+// Responsive for super small mobile devices 
+@media (min-width: 360px) {
+  // Portfolio projects style
+.card .col-6{
+  height: 180px;
+  overflow: hidden;
+  width: 280px;
+}
+.card .col-6 img {
+  width: 100%;
+  height: auto;
+  transform: translateY(0%);
+  transition: transform 10s ease-in-out 0s;
+}
 
+// Portfolio projects img
+.card .col-6:hover img {
+  transform: translateY(-69%);
+}
+.card-normal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card{
+  height: 630px;
+}
+// Da ordinare
+.col-5 .description-project{
+  width: 280px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.col-5 p{
+  color: #767676;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: none;
+  margin-bottom: 40px;
+}
+
+.stacks p{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  color: #000;
+  font-weight: 650;
+  font-size: 13px;
+  padding: 0.5rem 1.4rem;
+}
+
+.date-time{
+  color: hsla(0,5%,8%,.773);
+  font-size: 15px;
+  margin-left: 0.2rem;
+  margin-bottom: 10px;
+  display: flex;
+  width: 100px;
+}
+h3{
+  font-size: 15px;
+  display: flex;
+}
+
+.links a{
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+
+#showMoreButton{
+  position: absolute;
+  left: 20%;
+  background-color: #2d2e32;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton:hover{
+  background-color: #147efb;
+}
+
+#showMoreButton2{
+  position: absolute;
+  left: 20%;
+  background-color: #2d2e32;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton2:hover{
+  background-color: #147efb;
+}
+
+}
 
 // Responsive for super small mobile devices 
-@media (max-width: 370px) {
+@media (min-width: 370px) {
+  // Portfolio projects style
+.card .col-6{
+  height: 180px;
+  overflow: hidden;
+  width: 280px;
+}
+.card .col-6 img {
+  width: 100%;
+  height: auto;
+  transform: translateY(0%);
+  transition: transform 10s ease-in-out 0s;
+}
+
+// Portfolio projects img
+.card .col-6:hover img {
+  transform: translateY(-69%);
+}
+.card-normal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card{
+  height: 630px;
+}
+// Da ordinare
+.col-5 .description-project{
+  width: 280px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.col-5 p{
+  color: #767676;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: none;
+  margin-bottom: 40px;
+}
+
+.stacks p{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  color: #000;
+  font-weight: 650;
+  font-size: 13px;
+  padding: 0.5rem 1.4rem;
+}
+
+.date-time{
+  color: hsla(0,5%,8%,.773);
+  font-size: 15px;
+  margin-left: 0.2rem;
+  margin-bottom: 10px;
+  display: flex;
+  width: 100px;
+}
+h3{
+  font-size: 15px;
+  display: flex;
+}
+
+.links a{
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+
+#showMoreButton{
+  position: absolute;
+  left: 20%;
+  background-color: #2d2e32;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton:hover{
+  background-color: #147efb;
+}
+
+#showMoreButton2{
+  position: absolute;
+  left: 20%;
+  background-color: #2d2e32;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton2:hover{
+  background-color: #147efb;
+}
+
+}
+
+// Responsive for super small mobile devices 
+@media (min-width: 380px) {
   // Portfolio projects style
 .card .col-6{
   height: 180px;
