@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import { inject } from '@vercel/analytics';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
 import 'flag-icon-css/css/flag-icons.css';
@@ -15,5 +16,9 @@ import { faLocationDot as faLocationDotsSolid } from "@fortawesome/free-solid-sv
 
 library.add(faLocationDotsSolid);
 
+const app = createApp(App);
 
-createApp(App).use(store).use(router).component("font-awesome-icon", FontAwesomeIcon).mount('#app')
+// Inject the tracking script
+inject();
+
+app.use(store).use(router).component("font-awesome-icon", FontAwesomeIcon).mount('#app')
