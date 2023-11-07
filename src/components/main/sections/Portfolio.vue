@@ -275,9 +275,6 @@ export default {
   background-color: #147efb;
 }
 
-
-
-
 // Da ordinare
 .col-5 .description-project{
   width: 400px;
@@ -313,8 +310,6 @@ export default {
   font-size: 1.3rem;
   margin-left: 0.2rem;
 }
-
-
 
 // Portofolio section style
 #portfolio{
@@ -440,6 +435,11 @@ export default {
 }
 
 .stacks-2{
+  display: flex;
+  flex-direction: column;
+}
+
+.stacks-3{
   display: flex;
   flex-direction: column;
 }
