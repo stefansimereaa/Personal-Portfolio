@@ -138,7 +138,7 @@ export default {
         <div class="card card-normal mb-5" :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]">
           <!-- Link project -->
           <div class="col-6 project-3">
-            <a href="/discord" target="_blank">
+            <a href="https://dropbox-project.vercel.app/" target="_blank">
               <img src="../../../assets/img/projects/dropbox.png" alt="website">
             </a>
           </div>
@@ -168,41 +168,48 @@ export default {
           </div>
         </div>
 
+        <!-- BoolFlix -->
         <!-- Project 4 -->
         <div class="card card-normal d-none mb-5" :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]">
           <!-- Link project -->
           <div class="col-5 d-flex flex-column justify-content-center align-items-center">
             <div class="container d-flex flex-column justify-content-center align-items-center">
-              <h3>Discord
+              <h3>Netflix
                 <!-- Italian  Version -->
-                <span class="date-time" :style="{ color: isDarkText ? '#fff' : 'inherit' }" :class="{ 'd-none': !$store.state.isItalian }">(Aprile 2023)</span>
+                <span class="date-time" :style="{ color: isDarkText ? '#fff' : 'inherit' }" :class="{ 'd-none': !$store.state.isItalian }">(Luglio 2023)</span>
                 <!-- English Version -->
-                <span class="date-time" :style="{ color: isDarkText ? '#fff' : 'inherit' }" :class="{ 'd-none': $store.state.isItalian }">(April 2023)</span>
+                <span class="date-time" :style="{ color: isDarkText ? '#fff' : 'inherit' }" :class="{ 'd-none': $store.state.isItalian }">(July 2023)</span>
               </h3>
               <!-- Italian Version -->
-              <p class="description-project" :style="{ color: isDarkText ? '#fff' : 'inherit' }" :class="{ 'd-none': !$store.state.isItalian }">Un mockup di Discord illustra l'interfaccia di un assistente virtuale progettato per migliorare le funzionalità del server Discord. Mostra comandi, risposte e interazioni, dando agli utenti un'anteprima delle capacità del bot, dalla gestione delle attività alla fornitura di informazioni o alla moderazione delle discussioni</p>
+              <p class="description-project" :style="{ color: isDarkText ? '#fff' : 'inherit' }" :class="{ 'd-none': !$store.state.isItalian }">Netflix è una popolare piattaforma di streaming online che offre una vasta selezione di film, serie TV, documentari e contenuti originali.</p>
               <!-- English Version -->
-              <p class="description-project" :style="{ color: isDarkText ? '#fff' : 'inherit' }" :class="{ 'd-none': $store.state.isItalian }">A Discord mockup illustrates the interface of a virtual assistant designed to enhance Discord server functionality. It showcases commands, responses, and interactions, giving users a preview of the bot's capabilities, from managing tasks to providing information or moderating discussions</p>
+              <p class="description-project" :style="{ color: isDarkText ? '#fff' : 'inherit' }" :class="{ 'd-none': $store.state.isItalian }">Netflix is a popular online streaming platform that offers a wide selection of movies, TV series, documentaries, and original content.</p>
             </div>
-            <div class="stacks d-flex justify-content-center align-items-center">
-              <p :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]">Html</p>
-              <p :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]">Css</p>
+            <div class="stacks stacks-3 d-flex justify-content-center align-items-center">
+              <div class="d-flex">
+                <p :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]" class="me-2">Html</p>
+                <p :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]">Css</p>
+                <p :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]" class="me-2">Bootstrap</p>
+              </div>
+              <div class="d-flex">
+                <p :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]" class="me-2">Vue</p>
+                <p :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]" class="me-2">JavaScript</p>
+                <p :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]">Sass</p>
+              </div>
             </div>
             <div class="links d-flex align-items-center justify-content-center" :style="{ color: isDarkText ? '#fff' : 'inherit' }">
-              <a href="https://github.com/stefansimereaa/htmlcss-discord" target="_blank" class="me-4">Code 
+              <a href="https://github.com/stefansimereaa/vite-boolflix" target="_blank" class="me-4">Code 
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a>
-              <a href="/discord" target="_blank">Live Demo 
+              <a href="https://boolflix-project.vercel.app/" target="_blank">Live Demo 
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-external-link" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;"><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path><path d="M11 13l9 -9"></path><path d="M15 4h5v5"></path></svg></a>
             </div>
           </div>
-          <div class="col-6">
-            <a href="/discord" target="_blank">
-              <img src="../../../assets/img/projects/discord.png" alt="website">
+          <div class="col-6 project-4">
+            <a href="https://boolflix-project.vercel.app/" target="_blank">
+              <img src="../../../assets/img/projects/netflix.png" alt="website">
             </a>
           </div>
         </div>
-
-
 
         <!-- Show more btn -->
         <div class="container container-btn">
@@ -398,6 +405,11 @@ export default {
   transform: translateY(-84%);
 }
 
+.card .project-4:hover img {
+  transform: translateY(-70%);
+}
+
+
 .card-normal{
   display: flex;
   flex-direction: column;
@@ -526,6 +538,10 @@ h3{
   transform: translateY(-82%);
 }
 
+.card .project-4:hover img {
+  transform: translateY(-70%);
+}
+
 .card-normal{
   display: flex;
   flex-direction: column;
@@ -640,6 +656,10 @@ h3{
 
 .card .project-3:hover img {
   transform: translateY(-82%);
+}
+
+.card .project-4:hover img {
+  transform: translateY(-70%);
 }
 
 .card-normal{
@@ -758,6 +778,10 @@ h3{
   transform: translateY(-82%);
 }
 
+.card .project-4:hover img {
+  transform: translateY(-70%);
+}
+
 .card-normal{
   display: flex;
   flex-direction: column;
@@ -874,6 +898,10 @@ h3{
   transform: translateY(-82%);
 }
 
+.card .project-4:hover img {
+  transform: translateY(-73%);
+}
+
 .card-normal{
   display: flex;
   flex-direction: column;
@@ -883,12 +911,19 @@ h3{
   height: 630px;
 }
 
+.card:nth-child(4){
+  height: 650px;
+}
 .stacks-2{
   display: flex;
   flex-direction: row;
-  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
-
+.stacks-3{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 // Da ordinare
 .col-5 .description-project{
@@ -998,6 +1033,10 @@ h3{
   transform: translateY(-81%);
 }
 
+.card .project-4:hover img {
+  transform: translateY(-70%);
+}
+
 .card-normal{
   display: flex;
   flex-direction: column;
@@ -1010,6 +1049,9 @@ h3{
   height: 850px;
 }
 
+.card:nth-child(4) {
+  height: 800px;
+}
 
 // Da ordinare
 .col-5 .description-project{
@@ -1095,7 +1137,6 @@ h3{
 
 }
 
-
 // Responsive for notebooks
 @media (min-width: 992px) {  
 // Portfolio projects style
@@ -1115,6 +1156,18 @@ h3{
 .card .col-6:hover img {
   transform: translateY(-75%);
 }
+
+.card .project-2:hover img {
+  transform: translateY(-83%);
+}
+
+.card .project-3:hover img {
+  transform: translateY(-88%);
+}
+
+.card .project-4:hover img {
+  transform: translateY(-77%);
+}
 .card-normal{
   display: flex;
   flex-direction: column;
@@ -1122,6 +1175,15 @@ h3{
 }
 .card{
   height: 800px;
+}
+
+
+.card:nth-child(2) {
+  height: 900px;
+}
+
+.card:nth-child(4) {
+  height: 900px;
 }
 // Da ordinare
 .col-5 .description-project{
@@ -1244,6 +1306,10 @@ h3{
 .card:nth-child(2){
   height: 450px;
 }
+
+.card:nth-child(4){
+  height: 450px;
+}
 // Da ordinare
 .col-5 .description-project{
   width: 500px;
@@ -1256,7 +1322,6 @@ h3{
   font-weight: 600;
   text-align: center;
   text-transform: none;
-  margin-bottom: 40px;
 }
 
 .stacks p{
