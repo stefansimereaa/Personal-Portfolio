@@ -288,14 +288,12 @@ export default {
   text-align: center;
   text-transform: none;
 }
-
 .stacks{
   display: flex;
     gap: 1rem;
     justify-content: center;
     margin-top: 1rem;
 }
-
 .stacks p{
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
@@ -370,6 +368,142 @@ export default {
 }
 .card{
   height: 500px;
+}
+// Responsive for super small mobile devices 
+@media (min-width: 340px) {
+  // Portfolio projects style
+.card .col-6{
+  height: 180px;
+  overflow: hidden;
+  width: 260px;
+}
+.card .col-6 img {
+  width: 100%;
+  height: auto;
+  transform: translateY(0%);
+  transition: transform 10s ease-in-out 0s;
+}
+
+// Portfolio projects img
+.card .col-6:hover img {
+  transform: translateY(-69%);
+}
+
+.card .project-2:hover img {
+  transform: translateY(-80%);
+}
+
+.card .project-3:hover img {
+  transform: translateY(-84%);
+}
+
+.card .project-4:hover img {
+  transform: translateY(-70%);
+}
+
+
+.card-normal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card{
+  height: 630px;
+}
+
+.card:nth-child(2) {
+  height: 680px;
+}
+
+
+// Da ordinare
+.col-5 .description-project{
+  width: 280px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.col-5 p{
+  color: #767676;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: none;
+}
+
+.stacks-2{
+  display: flex;
+  flex-direction: column;
+}
+
+.stacks-3{
+  display: flex;
+  flex-direction: column;
+}
+
+.stacks p{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  color: #000;
+  font-weight: 650;
+  font-size: 13px;
+  padding: 0.5rem 1.4rem;
+}
+
+.date-time{
+  color: hsla(0,5%,8%,.773);
+  font-size: 15px;
+  margin-left: 0.2rem;
+  margin-bottom: 10px;
+  display: flex;
+  width: 100px;
+}
+h3{
+  font-size: 15px;
+  display: flex;
+}
+
+.links a{
+  display: flex;
+  width: 130px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+
+#showMoreButton{
+  position: absolute;
+  left: 20%;
+  background-color: #2d2e32;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton:hover{
+  background-color: #147efb;
+}
+
+#showMoreButton2{
+  position: absolute;
+  left: 20%;
+  background-color: #2d2e32;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  transition: background-color 0.3s;
+}
+
+#showMoreButton2:hover{
+  background-color: #147efb;
+}
+
 }
 
 // Responsive for super small mobile devices 
