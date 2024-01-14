@@ -206,7 +206,7 @@ export default {
           </div>
           <div class="col-6 project-4">
             <a href="https://boolflix-project.vercel.app/" target="_blank">
-              <img src="../../../assets/img/projects/netflix.png" alt="website">
+              <img src="../../../assets/img/projects/netflix.jpg" alt="website">
             </a>
           </div>
         </div>
