@@ -481,7 +481,6 @@ export default {
   display: flex;
   flex-direction: column;
 }
-
 .stacks-3{
   display: flex;
   flex-direction: column;
@@ -502,7 +501,7 @@ export default {
   margin-left: 0.2rem;
   margin-bottom: 10px;
   display: flex;
-  width: 100px;
+  width: 120px;
 }
 h3{
   font-size: 15px;
@@ -640,7 +639,7 @@ h3{
   margin-left: 0.2rem;
   margin-bottom: 10px;
   display: flex;
-  width: 100px;
+  width: 120px;
 }
 h3{
   font-size: 15px;
@@ -760,7 +759,7 @@ h3{
   margin-left: 0.2rem;
   margin-bottom: 10px;
   display: flex;
-  width: 100px;
+  width: 120px;
 }
 h3{
   font-size: 15px;
@@ -880,7 +879,7 @@ h3{
   margin-left: 0.2rem;
   margin-bottom: 10px;
   display: flex;
-  width: 100px;
+  width: 120px;
 }
 h3{
   font-size: 15px;
@@ -1000,7 +999,7 @@ h3{
   margin-left: 0.2rem;
   margin-bottom: 10px;
   display: flex;
-  width: 100px;
+  width: 120px;
 }
 h3{
   font-size: 15px;
@@ -1135,7 +1134,7 @@ h3{
   margin-left: 0.2rem;
   margin-bottom: 10px;
   display: flex;
-  width: 100px;
+  width: 120px;
 }
 h3{
   font-size: 15px;
@@ -1226,7 +1225,15 @@ h3{
 .card{
   height: 800px;
 }
+
+.card:nth-child(1) {
+  height: 850px;
+}
+
 .card:nth-child(2) {
+  height: 760px;
+}
+.card:nth-child(3) {
   height: 850px;
 }
 
@@ -1252,6 +1259,7 @@ h3{
   display: flex;
   flex-direction: row;
 }
+
 .stacks p{
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
@@ -1358,12 +1366,22 @@ h3{
   height: 800px;
 }
 
+.card:nth-child(1) {
+  height: 900px;
+}
 
 .card:nth-child(2) {
   height: 900px;
 }
+.card:nth-child(3) {
+  height: 900px;
+}
 
 .card:nth-child(4) {
+  height: 900px;
+}
+
+.card:nth-child(5) {
   height: 900px;
 }
 // Da ordinare
@@ -1444,7 +1462,8 @@ h3{
 #showMoreButton2:hover{
   background-color: #147efb;
 }
- 
+
+
 }
 
 // Responsive for desktops
@@ -1483,12 +1502,20 @@ h3{
 .card{
   height: 450px;
 }
+.card:nth-child(1){
+  height: 450px;
+}
 
 .card:nth-child(2){
   height: 450px;
 }
-
+.card:nth-child(3){
+  height: 450px;
+}
 .card:nth-child(4){
+  height: 450px;
+}
+.card:nth-child(5){
   height: 450px;
 }
 // Da ordinare
