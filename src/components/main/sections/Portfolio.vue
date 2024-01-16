@@ -64,12 +64,13 @@ export default {
           <!-- Link project -->
           <div class="col-6">
             <a href="https://discord-mockup.vercel.app/" target="_blank">
-              <img src="../../../assets/img/projects/trello.png" alt="website">
+              <img src="../../../assets/img/projects/Trello1.png" alt="website">
+              <img src="../../../assets/img/projects/Trello2.png" alt="website">
             </a>
           </div>
           <div class="col-5 d-flex flex-column justify-content-center align-items-center">
             <div class="container d-flex flex-column justify-content-center align-items-center">
-              <h3>Discord
+              <h3>Trello
                 <!-- Italian  Version -->
                 <span class="date-time" :style="{ color: isDarkText ? '#fff' : 'inherit' }" :class="{ 'd-none': !$store.state.isItalian }">(Dicembre 2023)</span>
                 <!-- English Version -->
@@ -80,14 +81,22 @@ export default {
               <!-- English Version -->
               <p class="description-project" :style="{ color: isDarkText ? '#fff' : 'inherit' }" :class="{ 'd-none': $store.state.isItalian }">My project is a faithful reproduction inspired by the popular task management platform, Trello. I tried to capture the essence and functionality of Trello, giving users a familiar and intuitive experience in managing daily tasks and activities.</p>
             </div>
-            <div class="stacks d-flex justify-content-center align-items-center">
-              <p :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]">Html</p>
-              <p :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]">Css</p>
+            <div class="stacks stacks-2 d-flex justify-content-center align-items-center">
+              <div class="d-flex">
+                <p :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]" class="me-2">Html</p>
+                <p :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]">Css</p>
+              </div>
+              <div class="d-flex">
+                <p :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]" class="me-2">Vue</p>
+                <p :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]">Laravel</p>
+                <p :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]">Sass</p>
+              </div>
             </div>
+            
             <div class="links d-flex align-items-center justify-content-center" :style="{ color: isDarkText ? '#fff' : 'inherit' }">
-              <a href="https://github.com/stefansimereaa/htmlcss-discord" target="_blank" class="me-4">Code 
+              <a href="https://github.com/stefansimereaa/trello-clone" target="_blank" class="me-4">Code 
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a>
-              <a href="https://discord-mockup.vercel.app/" target="_blank">Live Demo 
+              <a href="https://trello-project-clone.vercel.app/" target="_blank">Live Demo 
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-external-link" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;"><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path><path d="M11 13l9 -9"></path><path d="M15 4h5v5"></path></svg></a>
             </div>
           </div>
@@ -446,8 +455,10 @@ export default {
 .card{
   height: 630px;
 }
-
-.card:nth-child(2) {
+.card:nth-child(1) {
+  height: 680px;
+}
+.card:nth-child(3) {
   height: 680px;
 }
 
@@ -1509,7 +1520,7 @@ h3{
   margin-left: 0.2rem;
   margin-bottom: 10px;
   display: flex;
-  width: 150px;
+  width: 180px;
 }
 h3{
   font-size: 20px;
