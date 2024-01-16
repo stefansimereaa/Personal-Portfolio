@@ -63,7 +63,7 @@ export default {
         <div class="card card-normal mb-5" :style="[navbarStyle, navbarStyle.backgroundColor === '#181a1e' ? { 'box-shadow': '2px 2px 4px rgba(0,0,0,0.9)' } : {}]">
           <!-- Link project -->
           <div class="col-6">
-            <a href="https://discord-mockup.vercel.app/" target="_blank">
+            <a href="https://trello-project-clone.vercel.app/" target="_blank">
               <img src="../../../assets/img/projects/Trello1.png" alt="website">
               <img src="../../../assets/img/projects/Trello2.png" alt="website">
             </a>
